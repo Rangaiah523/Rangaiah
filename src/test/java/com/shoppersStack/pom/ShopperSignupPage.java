@@ -1,5 +1,5 @@
 package com.shoppersStack.pom;
 
-public class SignupPage {
+public class ShopperSignupPage {
 
 }
