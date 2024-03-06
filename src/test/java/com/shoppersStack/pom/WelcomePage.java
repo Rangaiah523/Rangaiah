@@ -8,15 +8,14 @@ import org.openqa.selenium.support.PageFactory;
 import generic.BaseClass;
 
 public class WelcomePage extends BaseClass {
-
-	@FindBy(xpath = "//button[text()='Login']")
-	WebElement Login;
-
 	public WelcomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 
-	public WebElement Login() {
-		return Login;
+	@FindBy(xpath = "//button[text()='Login']")
+	WebElement Login_btn;
+
+	public WebElement Login_btn() {
+		return Login_btn;
 	}
 }
