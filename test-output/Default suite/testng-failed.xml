@@ -7,7 +7,6 @@
         <methods>
           <include name="LaunchApplication"/>
           <include name="shopperLogin"/>
-          <include name="adminLogin"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.shoppersStack.testscripts.LoginModule -->
