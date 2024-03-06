@@ -16,12 +16,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 
-	public WebDriver driver;
+	public static WebDriver driver;
 	public WebDriverWait wait;
 
 	@BeforeTest
 	public void LaunchApplication() throws IOException {
-//		driver = new ChromeDriver();
 		driver = WebDriverManager.chromedriver().create();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
 		wait = new WebDriverWait(driver, Duration.ofSeconds(5));

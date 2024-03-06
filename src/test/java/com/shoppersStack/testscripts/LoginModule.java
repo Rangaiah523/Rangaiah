@@ -17,7 +17,7 @@ public class LoginModule extends BaseClass {
 	public void shopperLogin() {
 		WelcomePage welcomePage = new WelcomePage(driver);
 		welcomePage.Login_btn().click();
-		assertEquals(driver.getTitle(), "ShoppersStack | Login1", "Wrong page title");
+		assertEquals(driver.getTitle(), "ShoppersStack | Login", "Wrong page title");
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.Email_txtfield().sendKeys("testing1@gmail.com");
 		loginPage.Password_txtfield().sendKeys("Test@123");
