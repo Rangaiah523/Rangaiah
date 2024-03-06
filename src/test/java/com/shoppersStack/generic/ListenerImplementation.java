@@ -29,6 +29,7 @@ public class ListenerImplementation extends BaseClass implements ITestListener {
 		try {
 			Files.copy(src, dest);
 		} catch (IOException e) {
+			e.printStackTrace();
 		}
 	}
 
