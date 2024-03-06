@@ -8,6 +8,7 @@ import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -21,6 +22,7 @@ public class BaseClass {
 	public void LaunchApplication() throws IOException {
 		driver = WebDriverManager.chromedriver().create();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(5));
 		driver.manage().window().maximize();
 		Properties properties = new Properties();
 		FileInputStream file = new FileInputStream("./src/test/resources/Credentials.json");
