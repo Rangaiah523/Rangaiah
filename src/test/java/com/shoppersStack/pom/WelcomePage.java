@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import generic.BaseClass;
+import com.shoppersStack.generic.BaseClass;
 
 public class WelcomePage extends BaseClass {
 	public WelcomePage(WebDriver driver) {

@@ -1,4 +1,4 @@
-package generic;
+package com.shoppersStack.generic;
 
 import static org.testng.Assert.assertEquals;
 

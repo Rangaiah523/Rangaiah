@@ -5,11 +5,10 @@ import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
+import com.shoppersStack.generic.BaseClass;
 import com.shoppersStack.pom.HomePage;
 import com.shoppersStack.pom.LoginPage;
 import com.shoppersStack.pom.WelcomePage;
-
-import generic.BaseClass;
 
 public class LoginModule extends BaseClass {
 	@Test(priority = 1)
