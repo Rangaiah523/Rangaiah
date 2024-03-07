@@ -16,6 +16,7 @@ import org.testng.annotations.BeforeTest;
 import com.github.javafaker.Faker;
 import com.shoppersStack.pom.HomePage;
 import com.shoppersStack.pom.LoginPage;
+import com.shoppersStack.pom.MyAddress;
 import com.shoppersStack.pom.ShopperSignupPage;
 import com.shoppersStack.pom.WelcomePage;
 
@@ -31,6 +32,7 @@ public class BaseClass {
 	public static WelcomePage welcomePage;
 	public static HomePage homePage;
 	public static ShopperSignupPage shopperSignupPage;
+	public static MyAddress myAddress;
 	
 
 	@BeforeTest
@@ -56,6 +58,7 @@ public class BaseClass {
 		loginPage = new LoginPage(driver);
 		homePage = new HomePage(driver);
 		shopperSignupPage = new ShopperSignupPage(driver);
+		myAddress = new MyAddress(driver);
 
 	}
 
