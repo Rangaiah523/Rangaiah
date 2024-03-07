@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-07T07:32:16Z" name="Default suite" finished-at="2024-03-07T07:32:32Z" duration-ms="16273">
+  <suite started-at="2024-03-07T07:38:08Z" name="Default suite" finished-at="2024-03-07T07:38:28Z" duration-ms="20311">
     <groups>
     </groups>
-    <test started-at="2024-03-07T07:32:16Z" name="Default test" finished-at="2024-03-07T07:32:32Z" duration-ms="16273">
+    <test started-at="2024-03-07T07:38:08Z" name="Default test" finished-at="2024-03-07T07:38:28Z" duration-ms="20311">
       <class name="com.shoppersStack.testscripts.RegisterationModule">
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.shoppersStack.testscripts.RegisterationModule@56673b2c]" started-at="2024-03-07T13:02:16Z" name="LaunchApplication" finished-at="2024-03-07T13:02:21Z" duration-ms="4926" status="PASS">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.shoppersStack.testscripts.RegisterationModule@5b22b970]" started-at="2024-03-07T13:08:08Z" name="LaunchApplication" finished-at="2024-03-07T13:08:12Z" duration-ms="3774" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method signature="shopperRegister()[pri:1, instance:com.shoppersStack.testscripts.RegisterationModule@56673b2c]" started-at="2024-03-07T13:02:21Z" name="shopperRegister" finished-at="2024-03-07T13:02:32Z" duration-ms="11086" status="PASS">
+        <test-method signature="shopperRegister()[pri:1, instance:com.shoppersStack.testscripts.RegisterationModule@5b22b970]" started-at="2024-03-07T13:08:12Z" name="shopperRegister" finished-at="2024-03-07T13:08:28Z" duration-ms="16282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shopperRegister -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shoppersStack.testscripts.RegisterationModule@56673b2c]" started-at="2024-03-07T13:02:32Z" name="tearDown" finished-at="2024-03-07T13:02:32Z" duration-ms="228" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shoppersStack.testscripts.RegisterationModule@5b22b970]" started-at="2024-03-07T13:08:28Z" name="tearDown" finished-at="2024-03-07T13:08:28Z" duration-ms="232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
