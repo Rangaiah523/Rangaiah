@@ -22,12 +22,7 @@ public class HomePage {
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-//<<<<<<< HEAD
 
 	@FindBy(xpath = "//*[.='Home'and @class='active']")
 	public WebElement home_link;
-//=======
-	
-	
-//>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
 }
