@@ -7,10 +7,14 @@ import org.openqa.selenium.support.PageFactory;
 
 public class AccountSettings {
 
+	
 	@FindBy(xpath = "//div[text()='My Addresses']")
 	public WebElement myAddress_Button;
+	
 
-	public AccountSettings(WebDriver driver) {
-		PageFactory.initElements(driver, this);
-	}
+
+public AccountSettings(WebDriver driver) {
+	PageFactory.initElements(driver, this);
 }
+}
+	
