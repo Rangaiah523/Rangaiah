@@ -27,19 +27,7 @@ public class BaseClass {
 	// Driver
 	public static WebDriver driver = WebDriverManager.chromedriver().create();
 	public static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
-
-<<<<<<< HEAD
-	public static WebDriver driver;
-	public static WebDriverWait wait;
-	public static Faker faker;
-	public static String gender;
-	public static LoginPage loginPage;
-	public static WelcomePage welcomePage;
-	public static HomePage homePage;
-	public static ShopperSignupPage shopperSignupPage;
-	public static MyAddress myAddress;
 	
-=======
 	// Faker
 	public static Faker faker = new Faker(new Locale("en-IND"));
 
@@ -50,7 +38,6 @@ public class BaseClass {
 	public static ShopperSignupPage shopperSignupPage = new ShopperSignupPage(driver);
 	public static MyAddress myAddress = new MyAddress(driver);
 	public static AccountSettings accountSettings = new AccountSettings(driver);
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
 
 	@BeforeTest
 	public void LaunchApplication() throws IOException {
@@ -64,19 +51,6 @@ public class BaseClass {
 		driver.get(url);
 		assertEquals(driver.getTitle(), expectedTitle, "Title is Wrong");
 
-<<<<<<< HEAD
-		// Faker Class
-		faker = new Faker(new Locale("en-IND"));
-		
-		// Page Initialization
-		welcomePage = new WelcomePage(driver);
-		loginPage = new LoginPage(driver);
-		homePage = new HomePage(driver);
-		shopperSignupPage = new ShopperSignupPage(driver);
-		myAddress = new MyAddress(driver);
-
-=======
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
 	}
 
 	@AfterTest
