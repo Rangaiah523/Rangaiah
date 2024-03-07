@@ -34,6 +34,6 @@ public class ShopperSignupPage {
 	@FindBy(xpath = "//*[@id=\"Terms and Conditions\"]")
 	public WebElement Terms_Conditions_chkbox;
 
-	@FindBy(xpath = "//*[@id=\"Register\"]")
+	@FindBy(xpath = "//button[.=\"Register\"]")
 	public WebElement Register_btn;
 }
