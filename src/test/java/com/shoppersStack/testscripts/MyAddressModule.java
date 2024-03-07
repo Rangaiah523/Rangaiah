@@ -37,6 +37,8 @@ public void addAddress() throws Throwable {
 	myAddress.Addaddress_Button.click();
 	assertEquals(driver.getCurrentUrl(), "https://www.shoppersstack.com/addressform", "Url is MisMatched");
 	Faker faker = new Faker();
+	String firstname = faker.name().firstName();
+	
 	
 	
 	
