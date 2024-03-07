@@ -16,6 +16,7 @@ import org.testng.annotations.BeforeTest;
 import com.github.javafaker.Faker;
 import com.shoppersStack.pom.AccountSettings;
 import com.shoppersStack.pom.AddAddress;
+import com.shoppersStack.pom.AdminSignupPage;
 import com.shoppersStack.pom.HomePage;
 import com.shoppersStack.pom.LoginPage;
 import com.shoppersStack.pom.MyAddress;
@@ -26,7 +27,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 	// Driver
-	public static WebDriver driver = WebDriverManager.chromedriver().create();
+	public static WebDriver driver= WebDriverManager.chromedriver().create();
 	public static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
 
 	// Faker
@@ -40,10 +41,11 @@ public class BaseClass {
 	public static MyAddress myAddress = new MyAddress(driver);
 	public static AccountSettings accountSettings = new AccountSettings(driver);
 	public static AddAddress addAddress = new AddAddress(driver);
+	public static AdminSignupPage adminSignupPage = new AdminSignupPage(driver);
 
 	@BeforeTest
 	public void LaunchApplication() throws IOException {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		Properties properties = new Properties();
 		FileInputStream file = new FileInputStream("./src/test/resources/Credentials.json");
