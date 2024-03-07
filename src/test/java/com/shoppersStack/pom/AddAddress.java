@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class AddAddress {
-
+	//Home
 	@FindBy(xpath = "//input[@id=\"Name\"]")
 	public WebElement name_Textfield;
 	
@@ -28,7 +28,23 @@ public class AddAddress {
 	@FindBy(xpath = "//button[text()='Add Address']")
 	public WebElement addAddress_Button;
 	
+	@FindBy(xpath = "//select[@id=\"Country\"]")
+	public WebElement contry_Dropdown;
+	
+	@FindBy(xpath = "//select[@id=\"State\"]")
+	public WebElement state_Dropdown;
+	
+	@FindBy(xpath = "//select[@id=\"City\"]")
+	public WebElement cityDropdown;
+	
+	//Office
+	@FindBy(xpath = "//span[text()='Office']")
+	public WebElement officeRadioButton;
+	
 	public AddAddress(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
+	
+	
 }
+
