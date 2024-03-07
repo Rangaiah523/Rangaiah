@@ -10,7 +10,7 @@ import com.shoppersStack.generic.BaseClass;
 
 @Listeners(com.shoppersStack.generic.ListenerImplementation.class)
 public class LoginModule extends BaseClass {
-	@Test(priority = 1)
+	@Test
 	public void shopperLogin() {
 		welcomePage.Login_btn.click();
 		assertEquals(driver.getTitle(), "ShoppersStack | Login", "Wrong page title");
@@ -21,7 +21,7 @@ public class LoginModule extends BaseClass {
 		assertEquals(driver.getTitle(), "ShoppersStack | Home", "Wrong page title");
 	}
 
-	@Test(priority = 2)
+	@Test
 	public void adminLogin() {
 		welcomePage.Login_btn.click();
 		assertEquals(driver.getTitle(), "ShoppersStack | Login", "Wrong page title");
