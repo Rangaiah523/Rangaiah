@@ -14,5 +14,12 @@ public class MyProfile extends BaseClass {
 		lm.shopperLogin();
 		mpp.accountSettings.click();
 		mpp.profile.click();
+		mpp.editProfile.click();
+		mpp.firstNameField.clear();
+		mpp.firstNameField.sendKeys(faker.name().firstName());
+		mpp.submitButton.click();
+		driver.switchTo().alert().accept();
+		mpp.accountSettings.click();
+		mpp.logoutLink.click();
 	}
 }
