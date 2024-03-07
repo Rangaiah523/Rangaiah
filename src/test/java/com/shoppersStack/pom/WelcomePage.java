@@ -12,8 +12,4 @@ public class WelcomePage {
 
 	@FindBy(xpath = "//button[text()='Login']")
 	public WebElement Login_btn;
-//<<<<<<< HEAD
-//=======
-
-//>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
 }
