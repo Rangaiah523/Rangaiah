@@ -17,7 +17,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseClass {
 
 	public static WebDriver driver;
-	public WebDriverWait wait;
+	public static WebDriverWait wait;
 
 	@BeforeTest
 	public void LaunchApplication() throws IOException {

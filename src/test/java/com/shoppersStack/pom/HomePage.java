@@ -11,9 +11,5 @@ public class HomePage {
 	}
 
 	@FindBy(xpath = "//*[.='Home'and @class='active']")
-	WebElement home_link;
-
-	public WebElement home_link() {
-		return home_link;
-	}
+	public WebElement home_link;
 }

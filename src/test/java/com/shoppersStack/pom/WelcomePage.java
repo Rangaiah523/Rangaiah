@@ -11,9 +11,5 @@ public class WelcomePage {
 	}
 
 	@FindBy(xpath = "//button[text()='Login']")
-	WebElement Login_btn;
-
-	public WebElement Login_btn() {
-		return Login_btn;
-	}
+	public WebElement Login_btn;
 }

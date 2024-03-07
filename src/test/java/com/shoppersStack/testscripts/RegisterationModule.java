@@ -15,10 +15,10 @@ public class RegisterationModule extends BaseClass {
 	@Test(priority = 1)
 	public void shopperRegister() {
 		WelcomePage welcomePage = new WelcomePage(driver);
-		welcomePage.Login_btn().click();
+		welcomePage.Login_btn.click();
 		assertEquals(driver.getTitle(), "ShoppersStack | Login", "Wrong page title");
 		LoginPage loginPage = new LoginPage(driver);
-		loginPage.CreateAccount_btn().click();
+		loginPage.CreateAccount_btn.click();
 		assertEquals(driver.getTitle(), "ShoppersStack | Shopper | Signup", "Wrong page title");
 	}
 }
