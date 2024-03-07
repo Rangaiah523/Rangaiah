@@ -26,8 +26,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 	// Driver
-	public static WebDriver driver;
-	public static WebDriverWait wait;
+	public static WebDriver driver= WebDriverManager.chromedriver().create();
+	public static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
 
 	// Faker
 	public static Faker faker = new Faker(new Locale("en-IND"));
@@ -43,9 +43,7 @@ public class BaseClass {
 
 	@BeforeTest
 	public void LaunchApplication() throws IOException {
-		driver = WebDriverManager.chromedriver().create();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		wait = new WebDriverWait(driver, Duration.ofSeconds(3));
 		driver.manage().window().maximize();
 		Properties properties = new Properties();
 		FileInputStream file = new FileInputStream("./src/test/resources/Credentials.json");
