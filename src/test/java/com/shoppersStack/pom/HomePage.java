@@ -6,14 +6,22 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
+	
+
+	@FindBy(xpath = "//*[.='Home'and @class='active']")
+	public WebElement home_link;
+	
+	@FindBy(xpath = "//div[@class=\"MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-bjoz8z\"]")
+	public  WebElement profile_Button;
+	
+	@FindBy(xpath = "//li[text()='My Profile']")
+	public WebElement accountSettings_Button;
+	
+	
+	
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-
-	@FindBy(xpath = "//*[.='Home'and @class='active']")
-	WebElement home_link;
-
-	public WebElement home_link() {
-		return home_link;
-	}
+	
+	
 }

@@ -1,5 +1,13 @@
 package com.shoppersStack.pom;
 
-public class AccountSettings {
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
+public class AccountSettings {
+public AccountSettings(WebDriver driver) {
+	PageFactory.initElements(driver, this);
+	
+	
+}
 }
