@@ -19,6 +19,9 @@ public class HomePage {
 	@FindBy(xpath = "//*[.='Home'and @class='active']")
 	public WebElement home_link;
 	
+	@FindBy(xpath = "//div[.='Profile Created Successfully']")
+	public WebElement Profile_Created_Successfully_txt;
+	
 	@FindBy(xpath = "//div[.='Successfully Registered']")
 	public WebElement SuccessfullyRegistered_txt;
 

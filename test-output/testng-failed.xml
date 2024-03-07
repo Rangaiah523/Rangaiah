@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+  <test name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.shoppersStack.testscripts.MyAddressModule">
-=======
-      <class name="com.shoppersStack.testscripts.MyProfile">
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
+      <class name="com.shoppersStack.testscripts.RegisterationModule">
         <methods>
           <include name="LaunchApplication"/>
-<<<<<<< HEAD
-          <include name="addAddress"/>
-=======
-          <include name="editAddress"/>
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
-          <include name="tearDown"/>
+          <include name="adminRegister"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.shoppersStack.testscripts.MyAddressModule -->
-=======
-      </class> <!-- com.shoppersStack.testscripts.MyProfile -->
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
+      </class> <!-- com.shoppersStack.testscripts.RegisterationModule -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
