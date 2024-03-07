@@ -8,7 +8,7 @@ import com.shoppersStack.pom.MyProfilePage;
 public class MyProfile extends BaseClass {
 	public MyProfilePage mpp=new MyProfilePage(driver);
 	
-	@Test
+	@Test()
 	public void editAddress() throws InterruptedException {
 		LoginModule lm=new LoginModule();
 		lm.shopperLogin();
