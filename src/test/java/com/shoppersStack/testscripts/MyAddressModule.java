@@ -2,17 +2,12 @@ package com.shoppersStack.testscripts;
 
 import static org.testng.Assert.assertEquals;
 
-import org.bouncycastle.asn1.x9.ValidationParams;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import org.yaml.snakeyaml.tokens.StreamEndToken;
 
-import com.fasterxml.jackson.core.sym.Name;
-import com.github.javafaker.PhoneNumber;
 import com.shoppersStack.generic.BaseClass;
-import com.shoppersStack.pom.AddAddress;
 
 @Listeners(com.shoppersStack.generic.ListenerImplementation.class)
 public class MyAddressModule extends BaseClass {
@@ -129,14 +124,13 @@ public class MyAddressModule extends BaseClass {
 		editAddress.editOfficeAddressIcon.click();
 		boolean validation = editAddress.updateAddressText.isDisplayed();
 		assertEquals(validation, true);
-		String name = faker.name().fullName();
-		addAddress.name_Textfield.clear();
-		addAddress.name_Textfield.sendKeys(name);
+		wait.until(ExpectedConditions.elementToBeClickable(addAddress.landMark_Textfield));
 		addAddress.landMark_Textfield.clear();
 		addAddress.landMark_Textfield.sendKeys("Indiqube South End Circle Bangalore");
+		wait.until(ExpectedConditions.elementToBeClickable(addAddress.landMark_Textfield));
 		addAddress.pincodeTextfield.clear();
 		addAddress.pincodeTextfield.sendKeys("560004");
+		wait.until(ExpectedConditions.elementToBeClickable(editAddress.updateAddress_Button));
 		editAddress.updateAddress_Button.click();
-		Thread.sleep(5000);
-}
+		}
 }

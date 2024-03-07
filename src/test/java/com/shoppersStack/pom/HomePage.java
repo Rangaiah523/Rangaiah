@@ -21,5 +21,14 @@ public class HomePage {
 	
 	@FindBy(xpath = "//div[.='Successfully Registered']")
 	public WebElement SuccessfullyRegistered_txt;
+	
+	@FindBy(xpath = "//select[@id=\"category\"]")
+	public WebElement category_Dropdown;
+	
+	@FindBy(xpath = "//input[@id=\"search\"]")
+	public WebElement searchTextField;
+	
+	@FindBy(xpath = "//*[local-name()='svg' and @name=\"searchBtn\"]")
+	public WebElement Search_Icon;
 
 }
