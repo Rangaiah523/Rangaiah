@@ -7,6 +7,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.shoppersStack.generic.BaseClass;
+import com.shoppersStack.pom.AccountSettings;
 import com.shoppersStack.pom.HomePage;
 import com.shoppersStack.pom.LoginPage;
 import com.shoppersStack.pom.WelcomePage;
@@ -27,6 +28,10 @@ public void addAddress() throws Throwable {
 	HomePage homePage = new HomePage(driver);
 	homePage.profile_Button.click();
 	homePage.accountSettings_Button.click();
+	AccountSettings accountSettings = new AccountSettings(driver);
+	accountSettings.myAddress_Button.click();
+	assertEquals(driver.getCurrentUrl(),"https://www.shoppersstack.com/my-profile/my-addresses" , "Url is MisMatched");
+	
 	
 	
 }

@@ -4,13 +4,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
 
-public class AccountSettings {
+public class MyAddress {
 
-	@FindBy(xpath = "//div[text()='My Addresses']")
-	public WebElement myAddress_Button;
-
-	public AccountSettings(WebDriver driver) {
+	@FindBy(xpath = "//button[text()='Add Address']")
+	public WebElement Addaddress_Button;
+	
+	public MyAddress(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 }
