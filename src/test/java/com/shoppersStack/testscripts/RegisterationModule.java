@@ -2,6 +2,7 @@ package com.shoppersStack.testscripts;
 
 import static org.testng.Assert.assertEquals;
 
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -19,6 +20,7 @@ public class RegisterationModule extends BaseClass {
 		assertEquals(driver.getTitle(), "ShoppersStack | Login", "Wrong page title");
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.CreateAccount_btn.click();
+		wait.until(ExpectedConditions.titleIs("ShoppersStack | Shopper | Signup"));
 		assertEquals(driver.getTitle(), "ShoppersStack | Shopper | Signup", "Wrong page title");
 	}
 }
