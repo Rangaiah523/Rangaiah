@@ -3,13 +3,25 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
+      <class name="com.shoppersStack.testscripts.MyAddressModule">
+=======
       <class name="com.shoppersStack.testscripts.MyProfile">
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
         <methods>
           <include name="LaunchApplication"/>
+<<<<<<< HEAD
+          <include name="addAddress"/>
+=======
           <include name="editAddress"/>
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
           <include name="tearDown"/>
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.shoppersStack.testscripts.MyAddressModule -->
+=======
       </class> <!-- com.shoppersStack.testscripts.MyProfile -->
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
