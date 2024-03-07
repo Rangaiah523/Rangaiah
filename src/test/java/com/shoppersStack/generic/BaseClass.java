@@ -22,8 +22,8 @@ public class BaseClass {
 	@BeforeTest
 	public void LaunchApplication() throws IOException {
 		driver = WebDriverManager.chromedriver().create();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
-		wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		driver.manage().window().maximize();
 		Properties properties = new Properties();
 		FileInputStream file = new FileInputStream("./src/test/resources/Credentials.json");
