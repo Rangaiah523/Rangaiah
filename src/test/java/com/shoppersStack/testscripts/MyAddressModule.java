@@ -5,6 +5,7 @@ import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.yaml.snakeyaml.tokens.StreamEndToken;
 
 import com.shoppersStack.generic.BaseClass;
 
@@ -27,6 +28,15 @@ public class MyAddressModule extends BaseClass {
 		myAddress.Addaddress_Button.click();
 		assertEquals(driver.getCurrentUrl(), "https://www.shoppersstack.com/addressform", "Url is MisMatched");
 		String firstname = faker.name().firstName();
+		addAddress.name_Textfield.sendKeys(firstname);
+		String buildingNumber = faker.address().buildingNumber();
+		addAddress.HouseOffice_TextField.sendKeys(buildingNumber);
+		String Streetinfo = faker.address().streetName();
+		addAddress.strretInfo_Textfield.sendKeys(Streetinfo);
+		addAddress.landMark_Textfield.sendKeys("Jaya Nagara Circle");
+		Thread.sleep(5000);
+		
+		
 
 	}
 

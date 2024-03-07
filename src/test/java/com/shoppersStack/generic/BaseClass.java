@@ -15,6 +15,7 @@ import org.testng.annotations.BeforeTest;
 
 import com.github.javafaker.Faker;
 import com.shoppersStack.pom.AccountSettings;
+import com.shoppersStack.pom.AddAddress;
 import com.shoppersStack.pom.HomePage;
 import com.shoppersStack.pom.LoginPage;
 import com.shoppersStack.pom.MyAddress;
@@ -27,7 +28,7 @@ public class BaseClass {
 	// Driver
 	public static WebDriver driver = WebDriverManager.chromedriver().create();
 	public static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
-	
+
 	// Faker
 	public static Faker faker = new Faker(new Locale("en-IND"));
 
@@ -38,6 +39,7 @@ public class BaseClass {
 	public static ShopperSignupPage shopperSignupPage = new ShopperSignupPage(driver);
 	public static MyAddress myAddress = new MyAddress(driver);
 	public static AccountSettings accountSettings = new AccountSettings(driver);
+	public static AddAddress addAddress = new AddAddress(driver);
 
 	@BeforeTest
 	public void LaunchApplication() throws IOException {

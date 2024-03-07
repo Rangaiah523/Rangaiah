@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.shoppersStack.testscripts.RegisterationModule">
+      <class name="com.shoppersStack.testscripts.MyAddressModule">
         <methods>
           <include name="LaunchApplication"/>
-          <include name="shopperRegister"/>
+          <include name="addAddress"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.shoppersStack.testscripts.RegisterationModule -->
+      </class> <!-- com.shoppersStack.testscripts.MyAddressModule -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
