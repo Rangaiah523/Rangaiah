@@ -14,7 +14,9 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import com.github.javafaker.Faker;
+import com.shoppersStack.pom.HomePage;
 import com.shoppersStack.pom.LoginPage;
+import com.shoppersStack.pom.ShopperSignupPage;
 import com.shoppersStack.pom.WelcomePage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -27,6 +29,9 @@ public class BaseClass {
 	public static String gender;
 	public static LoginPage loginPage;
 	public static WelcomePage welcomePage;
+	public static HomePage homePage;
+	public static ShopperSignupPage shopperSignupPage;
+	
 
 	@BeforeTest
 	public void LaunchApplication() throws IOException {
@@ -46,12 +51,11 @@ public class BaseClass {
 		// Faker Class
 		faker = new Faker(new Locale("en-IND"));
 		
-		// Page Initilization
+		// Page Initialization
 		welcomePage = new WelcomePage(driver);
 		loginPage = new LoginPage(driver);
-		
-		
-		
+		homePage = new HomePage(driver);
+		shopperSignupPage = new ShopperSignupPage(driver);
 
 	}
 

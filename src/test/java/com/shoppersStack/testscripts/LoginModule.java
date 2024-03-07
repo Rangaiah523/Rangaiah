@@ -7,13 +7,11 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.shoppersStack.generic.BaseClass;
-import com.shoppersStack.pom.HomePage;
 
 @Listeners(com.shoppersStack.generic.ListenerImplementation.class)
 public class LoginModule extends BaseClass {
 	@Test(priority = 1)
 	public void shopperLogin() {
-
 		welcomePage.Login_btn.click();
 		assertEquals(driver.getTitle(), "ShoppersStack | Login", "Wrong page title");
 		loginPage.Email_txtfield.sendKeys("testing1@gmail.com");
@@ -25,15 +23,12 @@ public class LoginModule extends BaseClass {
 
 	@Test(priority = 2)
 	public void adminLogin() {
-
 		welcomePage.Login_btn.click();
 		assertEquals(driver.getTitle(), "ShoppersStack | Login", "Wrong page title");
-
 		loginPage.AdminLogin_btn.click();
 		loginPage.Email_txtfield.sendKeys("testing1@gmail.com");
 		loginPage.Password_txtfield.sendKeys("Test@123");
 		loginPage.Login_btn.click();
-		HomePage homePage = new HomePage(driver);
 		homePage.home_link.isDisplayed();
 	}
 }
