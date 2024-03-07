@@ -11,8 +11,7 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeMethod;
 
 import com.github.javafaker.Faker;
 import com.shoppersStack.pom.AccountSettings;
@@ -47,7 +46,7 @@ public class BaseClass {
 	public static	EditAddress editAddress = new EditAddress(driver);
 	
 
-	@BeforeTest
+	@BeforeMethod
 	public void LaunchApplication() throws IOException {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
@@ -61,8 +60,8 @@ public class BaseClass {
 
 	}
 
-	@AfterTest
-	public void tearDown() {
-		driver.quit();
-	}
+//	@AfterMethod
+//	public void tearDown() {
+//		driver.quit();
+//	}
 }

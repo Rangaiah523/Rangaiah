@@ -53,6 +53,6 @@ public class RegisterationModule extends BaseClass {
 		Select cityDropdown= new Select(adminSignupPage.City_dropdown);
 		cityDropdown.selectByValue("Bengaluru");
 		adminSignupPage.Register_btn.click();
-		homePage.SuccessfullyRegistered_txt.isDisplayed();
+		homePage.Profile_Created_Successfully_txt.isDisplayed();
 	}
 }
