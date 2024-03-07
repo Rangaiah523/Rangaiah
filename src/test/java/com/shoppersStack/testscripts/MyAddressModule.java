@@ -6,6 +6,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.github.javafaker.Faker;
 import com.shoppersStack.generic.BaseClass;
 import com.shoppersStack.pom.AccountSettings;
 import com.shoppersStack.pom.HomePage;
@@ -35,6 +36,7 @@ public void addAddress() throws Throwable {
 	MyAddress myAddress = new MyAddress(driver);
 	myAddress.Addaddress_Button.click();
 	assertEquals(driver.getCurrentUrl(), "https://www.shoppersstack.com/addressform", "Url is MisMatched");
+	Faker faker = new Faker();
 	
 	
 	

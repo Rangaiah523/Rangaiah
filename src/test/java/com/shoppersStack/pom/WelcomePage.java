@@ -14,8 +14,5 @@ public class WelcomePage {
 	public WelcomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-//<<<<<<< HEAD
-//=======
 
-//>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
 }
