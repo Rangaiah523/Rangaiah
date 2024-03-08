@@ -12,20 +12,25 @@ import java.util.Properties;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 
 import com.github.javafaker.Faker;
 import com.shoppersStack.pom.AccountSettings;
 import com.shoppersStack.pom.AddAddress;
+import com.shoppersStack.pom.AddToCartPage;
 import com.shoppersStack.pom.AdminSignupPage;
 import com.shoppersStack.pom.EditAddress;
 import com.shoppersStack.pom.HomePage;
 import com.shoppersStack.pom.LoginPage;
 import com.shoppersStack.pom.MyAddress;
+import com.shoppersStack.pom.PaymentPage;
 import com.shoppersStack.pom.MyProfilePage;
 import com.shoppersStack.pom.ShopperSignupPage;
 import com.shoppersStack.pom.WelcomePage;
+import com.shoppersStack.testscripts.LoginModule;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -49,8 +54,11 @@ public class BaseClass {
 	public static AddAddress addAddress = new AddAddress(driver);
 	public static AdminSignupPage adminSignupPage = new AdminSignupPage(driver);
 	public static EditAddress editAddress = new EditAddress(driver);
+	public static AddToCartPage addToCart = new AddToCartPage(driver);
+	public static PaymentPage paymentpage  = new PaymentPage(driver);
+	public static LoginModule loginModule = new LoginModule();
+	public static Actions actions=new Actions(driver);
 	public static MyProfilePage myProfilePage = new MyProfilePage(driver);
-	
 
 	@BeforeMethod
 	public void LaunchApplication() throws IOException, AWTException {
@@ -63,7 +71,12 @@ public class BaseClass {
 		String expectedTitle = properties.getProperty("WelcomePageTitle");
 		driver.get(url);
 		assertEquals(driver.getTitle(), expectedTitle, "Title is Wrong");
+<<<<<<< HEAD
 		robot = new Robot();
+=======
+		
+
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
 	}
 
 //	@AfterMethod
