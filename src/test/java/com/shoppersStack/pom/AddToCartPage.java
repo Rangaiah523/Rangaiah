@@ -12,6 +12,15 @@ public class AddToCartPage {
 	}
 	
 	@FindBy(xpath = "//button[@id='buynow_fl']")
-	public WebElement profile_Button;
+	public WebElement buynow_Button;
+	
+	@FindBy(xpath = "(//div[@class='cart_quantity__Eg+qv']/*[@id='increase'])[1]")
+	public WebElement increaseQuantity_Button;
+	
+	@FindBy(xpath = "(//button[text()='Remove from cart'])[1]")
+	public WebElement RemoveFromCart_Button; 
+	
+	@FindBy(xpath = "(//button[text()='Yes'])[1]")
+	public WebElement Yes_Button;
 	
 }

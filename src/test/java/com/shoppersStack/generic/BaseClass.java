@@ -25,13 +25,18 @@ import com.shoppersStack.pom.EditAddress;
 import com.shoppersStack.pom.HomePage;
 import com.shoppersStack.pom.LoginPage;
 import com.shoppersStack.pom.MyAddress;
+import com.shoppersStack.pom.MyOrdersPage;
 import com.shoppersStack.pom.MyProfilePage;
 import com.shoppersStack.pom.PaymentPage;
 import com.shoppersStack.pom.ShopperSignupPage;
 import com.shoppersStack.pom.VocherPage;
 import com.shoppersStack.pom.WelcomePage;
 import com.shoppersStack.testscripts.LoginModule;
+<<<<<<< HEAD
 import com.shoppersStack.testscripts.VocherModule;
+=======
+import com.shoppersStack.testscripts.LogoutModule;
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -41,7 +46,10 @@ public class BaseClass {
 	public static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
 	public static Robot robot;
 	public static JavascriptExecutor js = (JavascriptExecutor) driver;
+<<<<<<< HEAD
 	public static Actions actions = new Actions(driver);
+=======
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
 
 	// Faker
 	public static Faker faker = new Faker(new Locale("en-IND"));
@@ -59,8 +67,17 @@ public class BaseClass {
 	public static AddToCartPage addToCart = new AddToCartPage(driver);
 	public static PaymentPage paymentpage = new PaymentPage(driver);
 	public static LoginModule loginModule = new LoginModule();
+<<<<<<< HEAD
+=======
+	public static LogoutModule logoutModule = new LogoutModule();
+	public static Actions actions = new Actions(driver);
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
 	public static MyProfilePage myProfilePage = new MyProfilePage(driver);
+<<<<<<< HEAD
 	public static VocherPage vocherpage = new VocherPage(driver);
+=======
+	public static MyOrdersPage myOrderPage = new MyOrdersPage(driver);
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
 
 	@BeforeMethod
 	public void LaunchApplication() throws IOException, AWTException {
