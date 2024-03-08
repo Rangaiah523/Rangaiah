@@ -10,7 +10,7 @@ public class HomePage {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//div[@class=\"MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-bjoz8z\"]")
+	@FindBy(xpath = "//div[@class='MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-bjoz8z\"]")
 	public WebElement profile_Button;
 
 	@FindBy(xpath = "//li[text()='My Profile']")
@@ -25,16 +25,21 @@ public class HomePage {
 	@FindBy(xpath = "//div[.='Successfully Registered']")
 	public WebElement SuccessfullyRegistered_txt;
 	
-	@FindBy(xpath = "//select[@id=\"category\"]")
+	@FindBy(xpath = "//select[@id='category']")
 	public WebElement category_Dropdown;
 	
-	@FindBy(xpath = "//input[@id=\"search\"]")
+	@FindBy(xpath = "//input[@id='search']")
 	public WebElement searchTextField;
 	
-	@FindBy(xpath = "//*[local-name()='svg' and @name=\"searchBtn\"]")
+	@FindBy(xpath = "//*[local-name()='svg' and @name='searchBtn']")
 	public WebElement Search_Icon;
 	
 	@FindBy(xpath = "//li[.=\"Logout\"]")
 	public WebElement logout_Button;
+	@FindBy(xpath = "//a[@id='cart']/*[@id='cartIcon']")
+	public WebElement cartIcon;
+	
+	@FindBy(xpath = "(//button[@id='addToCart'])[4]")
+	public WebElement addToCartButton;
 
 }
