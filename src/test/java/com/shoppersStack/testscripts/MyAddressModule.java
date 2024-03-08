@@ -22,8 +22,8 @@ public class MyAddressModule extends BaseClass {
 		loginPage.Login_btn.click();
 		wait.until(ExpectedConditions.titleIs("ShoppersStack | Home"));
 		assertEquals(driver.getTitle(), "ShoppersStack | Home", "Wrong page title");
-		homePage.profile_Button.click();
-		homePage.accountSettings_Button.click();
+		homePage.accountSettings_btn.click();
+		homePage.myProfile_button.click();
 		accountSettings.myAddress_Button.click();
 		assertEquals(driver.getCurrentUrl(), "https://www.shoppersstack.com/my-profile/my-addresses",
 				"Url is MisMatched");
@@ -58,8 +58,8 @@ public class MyAddressModule extends BaseClass {
 		loginPage.Login_btn.click();
 		wait.until(ExpectedConditions.titleIs("ShoppersStack | Home"));
 		assertEquals(driver.getTitle(), "ShoppersStack | Home", "Wrong page title");
-		homePage.profile_Button.click();
-		homePage.accountSettings_Button.click();
+		homePage.accountSettings_btn.click();
+		homePage.myProfile_button.click();
 		accountSettings.myAddress_Button.click();
 		editAddress.editIcon.click();
 		boolean validation = editAddress.updateAddressText.isDisplayed();
@@ -81,8 +81,8 @@ public class MyAddressModule extends BaseClass {
 		loginPage.Login_btn.click();
 		wait.until(ExpectedConditions.titleIs("ShoppersStack | Home"));
 		assertEquals(driver.getTitle(), "ShoppersStack | Home", "Wrong page title");
-		homePage.profile_Button.click();
-		homePage.accountSettings_Button.click();
+		homePage.accountSettings_btn.click();
+		homePage.myProfile_button.click();
 		accountSettings.myAddress_Button.click();
 		assertEquals(driver.getCurrentUrl(), "https://www.shoppersstack.com/my-profile/my-addresses",
 				"Url is MisMatched");
@@ -118,8 +118,8 @@ public class MyAddressModule extends BaseClass {
 		loginPage.Login_btn.click();
 		wait.until(ExpectedConditions.titleIs("ShoppersStack | Home"));
 		assertEquals(driver.getTitle(), "ShoppersStack | Home", "Wrong page title");
-		homePage.profile_Button.click();
-		homePage.accountSettings_Button.click();
+		homePage.accountSettings_btn.click();
+		homePage.myProfile_button.click();
 		accountSettings.myAddress_Button.click();
 		editAddress.editOfficeAddressIcon.click();
 		boolean validation = editAddress.updateAddressText.isDisplayed();
