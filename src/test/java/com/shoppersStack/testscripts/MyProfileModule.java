@@ -14,7 +14,7 @@ public class MyProfileModule extends BaseClass {
 	public void uploadImage() {
 		new LoginModule().shopperLogin();
 		homePage.profile_Button.click();
-		myProfilePage.myProfile.click();
+		homePage.myProfile_button.click();
 		wait.until(ExpectedConditions.titleIs("ShoppersStack | Profile"));
 		assertEquals(driver.getTitle(), "ShoppersStack | Profile", "Page title is wrong");
 	}

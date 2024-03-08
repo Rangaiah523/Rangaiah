@@ -42,7 +42,7 @@ public class MyAddressModule extends BaseClass {
 		select2.selectByVisibleText("Karnataka");
 		Select select3 = new Select(addAddress.cityDropdown);
 		select3.selectByVisibleText("Bengaluru");
-		addAddress.pincodeTextfield.sendKeys("560004");
+		addAddress.pincodeTextfield.sendKeys("560010");
 		addAddress.phoneNumber_Textfield.sendKeys("7259987990");
 		addAddress.addAddress_Button.click();
 	}
@@ -67,7 +67,7 @@ public class MyAddressModule extends BaseClass {
 		String name = faker.name().fullName();
 		addAddress.name_Textfield.sendKeys(name);
 		addAddress.landMark_Textfield.sendKeys("South End Circle ");
-		addAddress.pincodeTextfield.sendKeys("560006");
+		addAddress.pincodeTextfield.sendKeys("560010");
 		editAddress.updateAddress_Button.click();
 }
 	
@@ -102,7 +102,7 @@ public class MyAddressModule extends BaseClass {
 		select2.selectByVisibleText("Karnataka");
 		Select select3 = new Select(addAddress.cityDropdown);
 		select3.selectByVisibleText("Bengaluru");
-		addAddress.pincodeTextfield.sendKeys("560004");
+		addAddress.pincodeTextfield.sendKeys("560010");
 		addAddress.phoneNumber_Textfield.sendKeys("7259987990");
 		addAddress.addAddress_Button.click();
 		Thread.sleep(5000);
@@ -129,7 +129,7 @@ public class MyAddressModule extends BaseClass {
 		addAddress.landMark_Textfield.sendKeys("Indiqube South End Circle Bangalore");
 		wait.until(ExpectedConditions.elementToBeClickable(addAddress.landMark_Textfield));
 		addAddress.pincodeTextfield.clear();
-		addAddress.pincodeTextfield.sendKeys("560004");
+		addAddress.pincodeTextfield.sendKeys("560010");
 		wait.until(ExpectedConditions.elementToBeClickable(editAddress.updateAddress_Button));
 		editAddress.updateAddress_Button.click();
 		}
