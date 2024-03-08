@@ -12,6 +12,6 @@ public class AddToCartPage {
 	}
 	
 	@FindBy(xpath = "//button[@id='buynow_fl']")
-	public WebElement profile_Button;
+	public WebElement buynow_Button;
 	
 }
