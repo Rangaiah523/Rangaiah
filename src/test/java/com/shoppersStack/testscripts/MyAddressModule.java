@@ -108,7 +108,7 @@ public class MyAddressModule extends BaseClass {
 		Thread.sleep(5000);
 	}
 	
-	//Edit Home Address
+	//Edit Office Address
 	@Test(priority = 4)
 	public void EditAddressOffice() throws Throwable {
 		welcomePage.Login_btn.click();

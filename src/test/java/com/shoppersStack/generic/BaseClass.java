@@ -11,6 +11,7 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import com.github.javafaker.Faker;
@@ -43,7 +44,7 @@ public class BaseClass {
 	public static AccountSettings accountSettings = new AccountSettings(driver);
 	public static AddAddress addAddress = new AddAddress(driver);
 	public static AdminSignupPage adminSignupPage = new AdminSignupPage(driver);
-	public static	EditAddress editAddress = new EditAddress(driver);
+	public static EditAddress editAddress = new EditAddress(driver);
 	
 
 	@BeforeMethod
@@ -62,6 +63,6 @@ public class BaseClass {
 
 //	@AfterMethod
 //	public void tearDown() {
-//		driver.quit();
-//	}
+//		driver.close();
+//}
 }
