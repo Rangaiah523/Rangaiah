@@ -44,7 +44,7 @@ public class BaseClass {
 	public static AccountSettings accountSettings = new AccountSettings(driver);
 	public static AddAddress addAddress = new AddAddress(driver);
 	public static AdminSignupPage adminSignupPage = new AdminSignupPage(driver);
-	public static	EditAddress editAddress = new EditAddress(driver);
+	public static EditAddress editAddress = new EditAddress(driver);
 	
 
 	@BeforeMethod
@@ -61,8 +61,8 @@ public class BaseClass {
 
 	}
 
-	@AfterMethod
-	public void tearDown() {
-		driver.quit();
-}
+//	@AfterMethod
+//	public void tearDown() {
+//		driver.close();
+//}
 }
