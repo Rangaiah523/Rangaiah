@@ -31,18 +31,27 @@ public class HomePage {
 	@FindBy(xpath = "//*[local-name()='svg' and @name='searchBtn']")
 	public WebElement Search_Icon;
 
-	@FindBy(xpath = "//li[.=\"Logout\"]")
-	public WebElement logout_Button;
-	
 	@FindBy(xpath = "//a[@id='cart']/*[@id='cartIcon']")
 	public WebElement cart_Icon;
 
 	@FindBy(xpath = "(//button[@id='addToCart'])[4]")
 	public WebElement addToCart_Button;
-	
+
 	@FindBy(xpath = "//li[text()='My Profile']")
 	public WebElement myProfile_button;
-	
-	
 
+	@FindBy(xpath = "//li[.='Wish List']")
+	public WebElement wishList_button;
+
+	@FindBy(xpath = "//li[.='My Orders']")
+	public WebElement myOrders_button;
+
+	@FindBy(xpath = "//li[.='My Wallet']")
+	public WebElement myWallet_button;
+
+	@FindBy(xpath = "//li[.='My Likes']")
+	public WebElement myLikes_button;
+
+	@FindBy(xpath = "//li[.='Logout']")
+	public WebElement logout_Button;
 }
