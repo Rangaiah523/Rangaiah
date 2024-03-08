@@ -1,30 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+=======
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite started-at="2024-03-08T06:30:01Z" name="Default suite" finished-at="2024-03-08T06:30:16Z" duration-ms="14250">
 =======
   <suite started-at="2024-03-08T12:05:39 IST" name="Default suite" finished-at="2024-03-08T12:05:52 IST" duration-ms="13152">
 >>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
+=======
+  <suite started-at="2024-03-08T12:17:05 IST" name="Default suite" finished-at="2024-03-08T12:17:18 IST" duration-ms="12701">
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test started-at="2024-03-08T06:30:01Z" name="Default test" finished-at="2024-03-08T06:30:16Z" duration-ms="14250">
       <class name="com.shoppersStack.testscripts.LogoutModule">
         <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.shoppersStack.testscripts.LogoutModule@1d61c6dc]" started-at="2024-03-08T12:00:01Z" name="LaunchApplication" finished-at="2024-03-08T12:00:04Z" duration-ms="2740" status="PASS">
 =======
     <test started-at="2024-03-08T12:05:39 IST" name="Default test" finished-at="2024-03-08T12:05:52 IST" duration-ms="13152">
+=======
+    <test started-at="2024-03-08T12:17:05 IST" name="Default test" finished-at="2024-03-08T12:17:18 IST" duration-ms="12701">
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
       <class name="com.shoppersStack.testscripts.End_To_EndModule">
+<<<<<<< HEAD
         <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.shoppersStack.testscripts.End_To_EndModule@41aaedaa]" started-at="2024-03-08T12:05:39 IST" name="LaunchApplication" finished-at="2024-03-08T12:05:42 IST" duration-ms="3070" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
+=======
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.shoppersStack.testscripts.End_To_EndModule@303a5119]" started-at="2024-03-08T12:17:05 IST" name="LaunchApplication" finished-at="2024-03-08T12:17:08 IST" duration-ms="2578" status="PASS">
 >>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
 <<<<<<< HEAD
+<<<<<<< HEAD
         <test-method signature="Logout()[pri:0, instance:com.shoppersStack.testscripts.LogoutModule@1d61c6dc]" started-at="2024-03-08T12:00:04Z" name="Logout" finished-at="2024-03-08T12:00:16Z" duration-ms="11485" status="PASS">
 =======
         <test-method signature="orderProduct()[pri:0, instance:com.shoppersStack.testscripts.End_To_EndModule@41aaedaa]" started-at="2024-03-08T12:05:42 IST" name="orderProduct" finished-at="2024-03-08T12:05:52 IST" duration-ms="10044" status="FAIL">
+=======
+        <test-method signature="orderProduct()[pri:0, instance:com.shoppersStack.testscripts.End_To_EndModule@303a5119]" started-at="2024-03-08T12:17:08 IST" name="orderProduct" finished-at="2024-03-08T12:17:18 IST" duration-ms="10086" status="FAIL">
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Login']"}
@@ -33,9 +53,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [300fc44c1682ba88efa89d2d63d7ef51, findElement {using=xpath, value=//button[text()='Login']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50380}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50380/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 300fc44c1682ba88efa89d2d63d7ef51]]>
+Command: [02d19719fe04cce625aaa65827f1f861, findElement {value=//button[text()='Login'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50888}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50888/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 02d19719fe04cce625aaa65827f1f861]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Login']"}
@@ -44,9 +64,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [300fc44c1682ba88efa89d2d63d7ef51, findElement {using=xpath, value=//button[text()='Login']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50380}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50380/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 300fc44c1682ba88efa89d2d63d7ef51
+Command: [02d19719fe04cce625aaa65827f1f861, findElement {value=//button[text()='Login'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50888}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50888/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 02d19719fe04cce625aaa65827f1f861
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -99,12 +119,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
+<<<<<<< HEAD
         </test-method> <!-- Logout -->
       </class> <!-- com.shoppersStack.testscripts.LogoutModule -->
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
         </test-method> <!-- orderProduct -->
       </class> <!-- com.shoppersStack.testscripts.End_To_EndModule -->
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
         </test-method> <!-- editAddress -->
@@ -132,6 +156,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 >>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
       </class> <!-- com.shoppersStack.testscripts.MyAddressModule -->
 >>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
+=======
 >>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
