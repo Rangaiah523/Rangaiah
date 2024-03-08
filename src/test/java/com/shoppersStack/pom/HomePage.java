@@ -33,5 +33,8 @@ public class HomePage {
 	
 	@FindBy(xpath = "//*[local-name()='svg' and @name=\"searchBtn\"]")
 	public WebElement Search_Icon;
+	
+	@FindBy(xpath = "//li[.=\"Logout\"]")
+	public WebElement logout_Button;
 
 }
