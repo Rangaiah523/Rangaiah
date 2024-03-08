@@ -25,21 +25,23 @@ import com.shoppersStack.pom.EditAddress;
 import com.shoppersStack.pom.HomePage;
 import com.shoppersStack.pom.LoginPage;
 import com.shoppersStack.pom.MyAddress;
+import com.shoppersStack.pom.MyOrdersPage;
 import com.shoppersStack.pom.MyProfilePage;
 import com.shoppersStack.pom.PaymentPage;
 import com.shoppersStack.pom.ShopperSignupPage;
 import com.shoppersStack.pom.WelcomePage;
 import com.shoppersStack.testscripts.LoginModule;
+import com.shoppersStack.testscripts.LogoutModule;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 	// Driver
-	public static WebDriver driver= WebDriverManager.chromedriver().create();
+	public static WebDriver driver = WebDriverManager.chromedriver().create();
 	public static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
-	public static  Robot robot;
-	public static JavascriptExecutor js=(JavascriptExecutor)driver;
-	
+	public static Robot robot;
+	public static JavascriptExecutor js = (JavascriptExecutor) driver;
+
 	// Faker
 	public static Faker faker = new Faker(new Locale("en-IND"));
 
@@ -54,10 +56,12 @@ public class BaseClass {
 	public static AdminSignupPage adminSignupPage = new AdminSignupPage(driver);
 	public static EditAddress editAddress = new EditAddress(driver);
 	public static AddToCartPage addToCart = new AddToCartPage(driver);
-	public static PaymentPage paymentpage  = new PaymentPage(driver);
+	public static PaymentPage paymentpage = new PaymentPage(driver);
 	public static LoginModule loginModule = new LoginModule();
-	public static Actions actions=new Actions(driver);
+	public static LogoutModule logoutModule = new LogoutModule();
+	public static Actions actions = new Actions(driver);
 	public static MyProfilePage myProfilePage = new MyProfilePage(driver);
+	public static MyOrdersPage myOrderPage = new MyOrdersPage(driver);
 
 	@BeforeMethod
 	public void LaunchApplication() throws IOException, AWTException {
@@ -71,7 +75,6 @@ public class BaseClass {
 		driver.get(url);
 		assertEquals(driver.getTitle(), expectedTitle, "Title is Wrong");
 		robot = new Robot();
-		
 
 	}
 
