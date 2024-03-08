@@ -6,7 +6,7 @@
       <class name="com.shoppersStack.testscripts.MyAddressModule">
         <methods>
           <include name="LaunchApplication"/>
-          <include name="EditAddress"/>
+          <include name="addAddress"/>
         </methods>
       </class> <!-- com.shoppersStack.testscripts.MyAddressModule -->
     </classes>
