@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import com.shoppersStack.generic.BaseClass;
 
-public class SearchModule extends BaseClass{
+public class SearchModule extends BaseClass {
 	@Test()
 	public void SearchProducts() throws Throwable {
 		welcomePage.Login_btn.click();
@@ -23,6 +23,7 @@ public class SearchModule extends BaseClass{
 		homePage.searchTextField.sendKeys("Books");
 		homePage.Search_Icon.click();
 		Thread.sleep(5000);
-		assertEquals(driver.getCurrentUrl(), "https://www.shoppersstack.com/search-products/Books/electronics", "Page is Wrong");	
-}
+		assertEquals(driver.getCurrentUrl(), "https://www.shoppersstack.com/search-products/Books/electronics",
+				"Page is Wrong");
+	}
 }

@@ -11,6 +11,12 @@ public class MyAddress {
 	@FindBy(xpath = "//button[text()='Add Address']")
 	public WebElement Addaddress_Button;
 	
+	@FindBy(xpath = "(//input[@name='address'])[1]")
+	public WebElement AddressRadio_Button;
+	
+	@FindBy(xpath = "//button[text()='Proceed']")
+	public WebElement Proceed_Button;
+	
 	public MyAddress(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
