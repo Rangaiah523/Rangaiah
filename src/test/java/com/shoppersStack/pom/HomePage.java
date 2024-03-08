@@ -54,4 +54,7 @@ public class HomePage {
 
 	@FindBy(xpath = "//li[.='Logout']")
 	public WebElement logout_Button;
+	
+	@FindBy(xpath = "//div[.='Success']")
+	public WebElement Success_txt;
 }
