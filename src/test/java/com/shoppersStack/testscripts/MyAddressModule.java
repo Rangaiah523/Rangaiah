@@ -42,7 +42,7 @@ public class MyAddressModule extends BaseClass {
 		select2.selectByVisibleText("Karnataka");
 		Select select3 = new Select(addAddress.cityDropdown);
 		select3.selectByVisibleText("Bengaluru");
-		addAddress.pincodeTextfield.sendKeys("560004");
+		addAddress.pincodeTextfield.sendKeys("560010");
 		addAddress.phoneNumber_Textfield.sendKeys("7259987990");
 		addAddress.addAddress_Button.click();
 	}
