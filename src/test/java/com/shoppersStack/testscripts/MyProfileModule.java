@@ -2,7 +2,6 @@ package com.shoppersStack.testscripts;
 
 import static org.testng.Assert.assertEquals;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -23,9 +22,8 @@ public class MyProfileModule extends BaseClass {
 		myProfilePage.addProfilePhoto_btn.isDisplayed();		
 		js.executeScript("document.querySelector(\"body > div.MuiModal-root.css-8ndowl > div.MuiBox-root.css-18zuygp > form > div > input\").click()");
 		
-		String jse = "arguments[0].type='file'";
-		((JavascriptExecutor)driver).executeScript(jse, js);
-		js.sendKeys("absolute_path_of_the_file_to_be_uploaded");
+		js.executeScript("arguments[0].style.type=\"file\"", element);
+		driver.findElement(locator).sendKeys("D:\\testImage.png");
 		
 		myProfilePage.chooseFile_btn.sendKeys("./src/test/resources/Profile_Image.jpg");
 		
