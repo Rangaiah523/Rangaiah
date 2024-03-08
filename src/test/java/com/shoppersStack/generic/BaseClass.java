@@ -9,9 +9,7 @@ import java.util.Locale;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import com.github.javafaker.Faker;
@@ -22,6 +20,7 @@ import com.shoppersStack.pom.EditAddress;
 import com.shoppersStack.pom.HomePage;
 import com.shoppersStack.pom.LoginPage;
 import com.shoppersStack.pom.MyAddress;
+import com.shoppersStack.pom.MyProfilePage;
 import com.shoppersStack.pom.ShopperSignupPage;
 import com.shoppersStack.pom.WelcomePage;
 
@@ -45,6 +44,7 @@ public class BaseClass {
 	public static AddAddress addAddress = new AddAddress(driver);
 	public static AdminSignupPage adminSignupPage = new AdminSignupPage(driver);
 	public static EditAddress editAddress = new EditAddress(driver);
+	public static MyProfilePage myProfilePage = new MyProfilePage(driver);
 	
 
 	@BeforeMethod

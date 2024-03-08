@@ -7,11 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class MyProfilePage {
 	
-	@FindBy(xpath="//button[@aria-label='Account settings']")
-	public WebElement accountSettings;
-	
 	@FindBy(xpath = "//li[text()='My Profile']")
-	public WebElement profile;
+	public WebElement myProfile;
 	
 	@FindBy(xpath = "//div[@class='r1']/button")
 	public WebElement editProfile;
