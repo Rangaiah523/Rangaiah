@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.shoppersStack.testscripts.MyAddressModule">
+      <class name="com.shoppersStack.testscripts.End_To_EndModule">
         <methods>
           <include name="LaunchApplication"/>
-          <include name="addAddress"/>
+          <include name="orderProduct"/>
         </methods>
-      </class> <!-- com.shoppersStack.testscripts.MyAddressModule -->
+      </class> <!-- com.shoppersStack.testscripts.End_To_EndModule -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
