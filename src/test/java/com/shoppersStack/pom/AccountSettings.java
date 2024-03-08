@@ -12,7 +12,6 @@ public class AccountSettings {
 	public WebElement myAddress_Button;
 	
 
-
 public AccountSettings(WebDriver driver) {
 	PageFactory.initElements(driver, this);
 }

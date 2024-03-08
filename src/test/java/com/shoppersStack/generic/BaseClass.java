@@ -11,6 +11,7 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import com.github.javafaker.Faker;
@@ -60,8 +61,8 @@ public class BaseClass {
 
 	}
 
-//	@AfterMethod
-//	public void tearDown() {
-//		driver.quit();
-//	}
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
+}
 }
