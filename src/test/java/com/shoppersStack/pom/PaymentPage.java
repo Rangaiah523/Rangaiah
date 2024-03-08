@@ -5,13 +5,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AddToCartPage {
+public class PaymentPage {
 
-	public AddToCartPage(WebDriver driver) {
+	public PaymentPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "//button[@id='buynow_fl']")
-	public WebElement profile_Button;
+	@FindBy(xpath = "(//input[@name='radio-buttons-group'])[2]")
+	public WebElement COD_Radio_Button;
 	
+	@FindBy(xpath = "//button[text()='Proceed']")
+	public WebElement Proceed_Button;
 }

@@ -3,12 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.shoppersStack.testscripts.MyAddressModule">
+      <class name="com.shoppersStack.testscripts.End_To_EndModule">
         <methods>
           <include name="LaunchApplication"/>
+<<<<<<< HEAD
           <include name="addOfficeAddress"/>
+=======
+          <include name="orderProduct"/>
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
         </methods>
-      </class> <!-- com.shoppersStack.testscripts.MyAddressModule -->
+      </class> <!-- com.shoppersStack.testscripts.End_To_EndModule -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
