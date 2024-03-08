@@ -5,8 +5,8 @@
     <classes>
       <class name="com.shoppersStack.testscripts.MyProfileModule">
         <methods>
-          <include name="uploadProfileImage"/>
           <include name="LaunchApplication"/>
+          <include name="editprofile"/>
         </methods>
       </class> <!-- com.shoppersStack.testscripts.MyProfileModule -->
     </classes>
