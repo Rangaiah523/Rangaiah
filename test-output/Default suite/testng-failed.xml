@@ -3,28 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.shoppersStack.testscripts.MyProfileModule">
-=======
-      <class name="com.shoppersStack.testscripts.End_To_EndModule">
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
+      <class name="com.shoppersStack.testscripts.VocherModule">
         <methods>
-          <include name="uploadProfileImage"/>
           <include name="LaunchApplication"/>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-          <include name="addOfficeAddress"/>
-=======
-          <include name="orderProduct"/>
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
+          <include name="GenerateVocher"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.shoppersStack.testscripts.MyProfileModule -->
-=======
-      </class> <!-- com.shoppersStack.testscripts.End_To_EndModule -->
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
+      </class> <!-- com.shoppersStack.testscripts.VocherModule -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

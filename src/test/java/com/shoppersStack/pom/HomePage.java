@@ -54,4 +54,7 @@ public class HomePage {
 
 	@FindBy(xpath = "//li[.='Logout']")
 	public WebElement logout_Button;
+	
+	@FindBy(xpath = "//a[@href=\"https://voucher.shoppersstack.com\"]")
+	public WebElement vocher_Button;
 }
