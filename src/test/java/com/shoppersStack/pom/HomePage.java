@@ -55,11 +55,8 @@ public class HomePage {
 	@FindBy(xpath = "//li[.='Logout']")
 	public WebElement logout_Button;
 	
-<<<<<<< HEAD
 	@FindBy(xpath = "//a[@href=\"https://voucher.shoppersstack.com\"]")
 	public WebElement vocher_Button;
-=======
 	@FindBy(xpath = "//div[.='Success']")
 	public WebElement Success_txt;
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
 }
