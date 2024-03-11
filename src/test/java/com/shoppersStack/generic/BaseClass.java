@@ -31,7 +31,6 @@ import com.shoppersStack.pom.PaymentPage;
 import com.shoppersStack.pom.ShopperSignupPage;
 import com.shoppersStack.pom.VocherPage;
 import com.shoppersStack.pom.WelcomePage;
-import com.shoppersStack.pom.WishlistPage;
 import com.shoppersStack.testscripts.LoginModule;
 import com.shoppersStack.testscripts.LogoutModule;
 
@@ -65,7 +64,6 @@ public class BaseClass {
 	public static MyProfilePage myProfilePage = new MyProfilePage(driver);
 	public static VocherPage vocherpage = new VocherPage(driver);
 	public static MyOrdersPage myOrderPage = new MyOrdersPage(driver);
-	public static WishlistPage wishlistPage = new WishlistPage(driver);
 
 	@BeforeMethod
 	public void LaunchApplication() throws IOException, AWTException {

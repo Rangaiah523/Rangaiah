@@ -7,7 +7,6 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.shoppersStack.generic.BaseClass;
-import com.shoppersStack.pom.WishlistPage;
 
 @Listeners(com.shoppersStack.generic.ListenerImplementation.class)
 public class WishlistModule extends BaseClass {
@@ -15,8 +14,8 @@ public class WishlistModule extends BaseClass {
 	@Test(priority = 1)
 	public void addItemToWishlist() throws InterruptedException {
 		loginModule.shopperLogin();
-		actions.scrollToElement(WishlistPage.wishList_btn).perform();
-		WishlistPage.wishList_btn.click();
+//		actions.scrollToElement(wishlistPage.wishList_btn).perform();
+//		wishlistPage.wishList_btn.click();
 		homePage.accountSettings_btn.click();
 		homePage.wishList_button.click();
 		driver.navigate().refresh();
