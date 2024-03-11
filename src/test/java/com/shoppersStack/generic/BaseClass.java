@@ -27,6 +27,7 @@ import com.shoppersStack.pom.LoginPage;
 import com.shoppersStack.pom.MyAddress;
 import com.shoppersStack.pom.MyOrdersPage;
 import com.shoppersStack.pom.MyProfilePage;
+import com.shoppersStack.pom.MyWallet;
 import com.shoppersStack.pom.PaymentPage;
 import com.shoppersStack.pom.ShopperSignupPage;
 import com.shoppersStack.pom.VocherPage;
@@ -63,6 +64,7 @@ public class BaseClass {
 	public static MyProfilePage myProfilePage = new MyProfilePage(driver);
 	public static VocherPage vocherpage = new VocherPage(driver);
 	public static MyOrdersPage myOrderPage = new MyOrdersPage(driver);
+	public static MyWallet myWallet=new MyWallet(driver);
 
 	@BeforeMethod
 	public void LaunchApplication() throws IOException, AWTException {
