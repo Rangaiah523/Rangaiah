@@ -15,4 +15,7 @@ public class MyWallet {
 	
 	@FindBy(id = "Verify")
 	public WebElement Verify_Button;
+	
+	@FindBy(xpath = "//button[.='Use Coupon']")
+	public WebElement UseCoupon_Button;
 }
