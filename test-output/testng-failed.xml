@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.shoppersStack.testscripts.MyProfileModule">
+      <class name="com.shoppersStack.testscripts.WishlistModule">
         <methods>
+          <include name="addItemToWishlist"/>
           <include name="LaunchApplication"/>
-          <include name="editprofile"/>
         </methods>
-      </class> <!-- com.shoppersStack.testscripts.MyProfileModule -->
+      </class> <!-- com.shoppersStack.testscripts.WishlistModule -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

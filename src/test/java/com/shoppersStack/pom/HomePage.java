@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage {
+import com.shoppersStack.generic.BaseClass;
+
+public class HomePage extends BaseClass {
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -54,7 +56,10 @@ public class HomePage {
 
 	@FindBy(xpath = "//li[.='Logout']")
 	public WebElement logout_Button;
-	
+
+	@FindBy(xpath = "//a[@href=\"https://voucher.shoppersstack.com\"]")
+	public WebElement vocher_Button;
+
 	@FindBy(xpath = "//div[.='Success']")
 	public WebElement Success_txt;
 }
