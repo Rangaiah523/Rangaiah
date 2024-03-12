@@ -4,12 +4,20 @@
   <test name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.shoppersStack.testscripts.WishlistModule">
+=======
+      <class name="com.shoppersStack.testscripts.MyWalletModule">
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
 =======
       <class name="com.shoppersStack.testscripts.VocherModule">
 >>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
         <methods>
+<<<<<<< HEAD
           <include name="removeItemFromWishlist"/>
+=======
+          <include name="myWallet"/>
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
           <include name="LaunchApplication"/>
 <<<<<<< HEAD
 =======
@@ -17,7 +25,11 @@
 >>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
         </methods>
 <<<<<<< HEAD
+<<<<<<< HEAD
       </class> <!-- com.shoppersStack.testscripts.WishlistModule -->
+=======
+      </class> <!-- com.shoppersStack.testscripts.MyWalletModule -->
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
 =======
       </class> <!-- com.shoppersStack.testscripts.VocherModule -->
 >>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah

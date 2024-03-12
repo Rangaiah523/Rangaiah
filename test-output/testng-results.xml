@@ -3,16 +3,26 @@
   <reporter-output>
   </reporter-output>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <suite started-at="2024-03-12T06:06:06Z" name="Default suite" finished-at="2024-03-12T06:06:20Z" duration-ms="13313">
+=======
+  <suite started-at="2024-03-12T11:36:45 IST" name="Default suite" finished-at="2024-03-12T11:37:04 IST" duration-ms="19301">
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
 =======
   <suite started-at="2024-03-12T05:31:55Z" name="Default suite" finished-at="2024-03-12T05:32:21Z" duration-ms="25385">
 >>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
     <groups>
     </groups>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <test started-at="2024-03-12T06:06:06Z" name="Default test" finished-at="2024-03-12T06:06:20Z" duration-ms="13313">
       <class name="com.shoppersStack.testscripts.WishlistModule">
         <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.shoppersStack.testscripts.WishlistModule@10667848]" started-at="2024-03-12T11:36:06Z" name="LaunchApplication" finished-at="2024-03-12T11:36:09Z" duration-ms="2318" status="PASS">
+=======
+    <test started-at="2024-03-12T11:36:45 IST" name="Default test" finished-at="2024-03-12T11:37:04 IST" duration-ms="19301">
+      <class name="com.shoppersStack.testscripts.MyWalletModule">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.shoppersStack.testscripts.MyWalletModule@1bcb79c2]" started-at="2024-03-12T11:36:45 IST" name="LaunchApplication" finished-at="2024-03-12T11:36:47 IST" duration-ms="2326" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
 =======
     <test started-at="2024-03-12T05:31:55Z" name="Default test" finished-at="2024-03-12T05:32:21Z" duration-ms="25385">
       <class name="com.shoppersStack.testscripts.VocherModule">
@@ -22,15 +32,24 @@
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
 <<<<<<< HEAD
+<<<<<<< HEAD
         <test-method signature="addItemToWishlist()[pri:1, instance:com.shoppersStack.testscripts.WishlistModule@10667848]" started-at="2024-03-12T11:36:09Z" name="addItemToWishlist" finished-at="2024-03-12T11:36:20Z" duration-ms="10981" status="PASS">
+=======
+        <test-method signature="myWallet()[pri:0, instance:com.shoppersStack.testscripts.MyWalletModule@1bcb79c2]" started-at="2024-03-12T11:36:47 IST" name="myWallet" finished-at="2024-03-12T11:37:04 IST" duration-ms="16945" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
 =======
         <test-method signature="GenerateVocher()[pri:0, instance:com.shoppersStack.testscripts.VocherModule@38eb2fb0]" started-at="2024-03-12T11:01:58Z" name="GenerateVocher" finished-at="2024-03-12T11:02:21Z" duration-ms="22445" status="PASS">
 >>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
           <reporter-output>
           </reporter-output>
 <<<<<<< HEAD
+<<<<<<< HEAD
         </test-method> <!-- addItemToWishlist -->
       </class> <!-- com.shoppersStack.testscripts.WishlistModule -->
+=======
+        </test-method> <!-- myWallet -->
+      </class> <!-- com.shoppersStack.testscripts.MyWalletModule -->
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
 =======
         </test-method> <!-- GenerateVocher -->
       </class> <!-- com.shoppersStack.testscripts.VocherModule -->
