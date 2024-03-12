@@ -65,11 +65,8 @@ public class BaseClass {
 	public static MyProfilePage myProfilePage = new MyProfilePage(driver);
 	public static VocherPage vocherpage = new VocherPage(driver);
 	public static MyOrdersPage myOrderPage = new MyOrdersPage(driver);
-<<<<<<< HEAD
 	public static CouponGeneratorPage couponGeneratorPage = new CouponGeneratorPage(driver);
-=======
 	public static MyWallet myWallet=new MyWallet(driver);
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
 
 	@BeforeMethod
 	public void LaunchApplication() throws IOException, AWTException {
