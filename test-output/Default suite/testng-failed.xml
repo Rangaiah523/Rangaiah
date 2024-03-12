@@ -3,24 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.shoppersStack.testscripts.VocherModule">
-=======
-      <class name="com.shoppersStack.testscripts.BuyModule">
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
+      <class name="com.shoppersStack.testscripts.MyWalletModule">
         <methods>
+          <include name="myWallet"/>
           <include name="LaunchApplication"/>
-<<<<<<< HEAD
-          <include name="GenerateVocher"/>
-=======
-          <include name="orderProduct"/>
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.shoppersStack.testscripts.VocherModule -->
-=======
-      </class> <!-- com.shoppersStack.testscripts.BuyModule -->
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
+      </class> <!-- com.shoppersStack.testscripts.MyWalletModule -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -20,10 +20,10 @@ public class MyWalletModule extends BaseClass{
 		homePage.myWallet_button.click();
 		wait.until(ExpectedConditions.titleIs("ShoppersStack | My Wallet"));
 		assertEquals(driver.getTitle(), "ShoppersStack | My Wallet", "Wrong page title");
-		myWallet.UseCoupon_Button.click();
-		CouponCode = new Scanner(System.in).nextLine();
-		myWallet.CouponCode_TF.sendKeys(CouponCode);
+		Thread.sleep(3000);
+		myWallet.CouponCode_TF.sendKeys("V5H7-IJKY-R7PJ");
 		myWallet.Verify_Button.click();
 		Thread.sleep(3000);
+		logoutModule.LogoutSg();
 	}
 }
