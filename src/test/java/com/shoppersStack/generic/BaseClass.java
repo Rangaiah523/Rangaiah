@@ -46,7 +46,7 @@ public class BaseClass {
 	public static Robot robot;
 	public static JavascriptExecutor js = (JavascriptExecutor) driver;
 	public static Actions actions = new Actions(driver);
-	
+
 	// Faker
 	public static Faker faker = new Faker(new Locale("en-IND"));
 
@@ -66,9 +66,17 @@ public class BaseClass {
 	public static LogoutModule logoutModule = new LogoutModule();
 	public static MyProfilePage myProfilePage = new MyProfilePage(driver);
 	public static VocherPage vocherpage = new VocherPage(driver);
+<<<<<<< HEAD
+=======
+	public static MyOrdersPage myOrderPage = new MyOrdersPage(driver);
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
 	public static WishlistPage wishlistPage = new WishlistPage(driver);
 	public static CouponGeneratorPage couponGeneratorPage = new CouponGeneratorPage(driver);
+<<<<<<< HEAD
 	public static MyWallet myWallet=new MyWallet(driver);
+=======
+	public static MyWallet myWallet = new MyWallet(driver);
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
 
 	@BeforeMethod
 	public void LaunchApplication() throws IOException, AWTException {
