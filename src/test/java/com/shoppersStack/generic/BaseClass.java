@@ -66,21 +66,9 @@ public class BaseClass {
 	public static LogoutModule logoutModule = new LogoutModule();
 	public static MyProfilePage myProfilePage = new MyProfilePage(driver);
 	public static VocherPage vocherpage = new VocherPage(driver);
-	public static MyOrdersPage myOrderPage = new MyOrdersPage(driver);
-<<<<<<< HEAD
-<<<<<<< HEAD
 	public static WishlistPage wishlistPage = new WishlistPage(driver);
-=======
-<<<<<<< HEAD
-=======
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
 	public static CouponGeneratorPage couponGeneratorPage = new CouponGeneratorPage(driver);
 	public static MyWallet myWallet=new MyWallet(driver);
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
-=======
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
 
 	@BeforeMethod
 	public void LaunchApplication() throws IOException, AWTException {
