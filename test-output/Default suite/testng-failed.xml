@@ -3,12 +3,24 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.shoppersStack.testscripts.WishlistModule">
+=======
+      <class name="com.shoppersStack.testscripts.VocherModule">
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
         <methods>
           <include name="removeItemFromWishlist"/>
           <include name="LaunchApplication"/>
+<<<<<<< HEAD
+=======
+          <include name="GenerateVocher"/>
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.shoppersStack.testscripts.WishlistModule -->
+=======
+      </class> <!-- com.shoppersStack.testscripts.VocherModule -->
+>>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
