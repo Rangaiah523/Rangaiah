@@ -31,6 +31,7 @@ import com.shoppersStack.pom.PaymentPage;
 import com.shoppersStack.pom.ShopperSignupPage;
 import com.shoppersStack.pom.VocherPage;
 import com.shoppersStack.pom.WelcomePage;
+import com.shoppersStack.pom.WishlistPage;
 import com.shoppersStack.testscripts.LoginModule;
 import com.shoppersStack.testscripts.LogoutModule;
 
@@ -64,10 +65,11 @@ public class BaseClass {
 	public static MyProfilePage myProfilePage = new MyProfilePage(driver);
 	public static VocherPage vocherpage = new VocherPage(driver);
 	public static MyOrdersPage myOrderPage = new MyOrdersPage(driver);
+	public static WishlistPage wishlistPage = new WishlistPage(driver);
 
 	@BeforeMethod
 	public void LaunchApplication() throws IOException, AWTException {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		Properties properties = new Properties();
 		FileInputStream file = new FileInputStream("./src/test/resources/Credentials.json");

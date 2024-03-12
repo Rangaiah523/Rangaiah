@@ -5,7 +5,7 @@
     <classes>
       <class name="com.shoppersStack.testscripts.WishlistModule">
         <methods>
-          <include name="addItemToWishlist"/>
+          <include name="removeItemFromWishlist"/>
           <include name="LaunchApplication"/>
         </methods>
       </class> <!-- com.shoppersStack.testscripts.WishlistModule -->
