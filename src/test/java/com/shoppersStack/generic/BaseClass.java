@@ -14,6 +14,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import com.github.javafaker.Faker;
@@ -69,7 +70,7 @@ public class BaseClass {
 	public static MyOrdersPage myOrderPage = new MyOrdersPage(driver);
 	public static WishlistPage wishlistPage = new WishlistPage(driver);
 	public static CouponGeneratorPage couponGeneratorPage = new CouponGeneratorPage(driver);
-	public static MyWallet myWallet=new MyWallet(driver);
+	public static MyWallet myWallet = new MyWallet(driver);
 
 	@BeforeMethod
 	public void LaunchApplication() throws IOException, AWTException {
@@ -87,6 +88,8 @@ public class BaseClass {
 
 //	@AfterMethod
 //	public void tearDown() {
-//		driver.close();
-//}
+//		if(driver!=null) {
+//			driver.quit();
+//		}
+//	}
 }

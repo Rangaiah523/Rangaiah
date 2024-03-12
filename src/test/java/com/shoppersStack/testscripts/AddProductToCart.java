@@ -1,5 +1,7 @@
 package com.shoppersStack.testscripts;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
@@ -14,7 +16,7 @@ public class AddProductToCart extends BaseClass{
 		homePage.addToCart_Button.click();
 		homePage.cart_Icon.click();
 		Thread.sleep(3000);
-		assertEquals(driver.getTitle(), "ShoppersStack | Home", "Wrong page title");
+		AssertJUnit.assertEquals(driver.getTitle(), "ShoppersStack | Home", "Wrong page title");
 		logoutModule.LogoutSg();
 	}
 	
@@ -23,7 +25,7 @@ public class AddProductToCart extends BaseClass{
 		loginModule.shopperLogin();
 		homePage.cart_Icon.click();
 		Thread.sleep(3000);
-		assertEquals(driver.getTitle(), "ShoppersStack | Cart", "Wrong page title");
+		AssertJUnit.assertEquals(driver.getTitle(), "ShoppersStack | Cart", "Wrong page title");
 		addToCart.increaseQuantity_Button.click();
 		Thread.sleep(3000);
 		logoutModule.LogoutSg();
@@ -34,7 +36,7 @@ public class AddProductToCart extends BaseClass{
 		loginModule.shopperLogin();
 		homePage.cart_Icon.click();
 		Thread.sleep(3000);
-		assertEquals(driver.getTitle(), "ShoppersStack | Cart", "Wrong page title");
+		AssertJUnit.assertEquals(driver.getTitle(), "ShoppersStack | Cart", "Wrong page title");
 		addToCart.RemoveFromCart_Button.click();
 		Thread.sleep(3000);
 		addToCart.Yes_Button.click();

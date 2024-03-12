@@ -1,38 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test name="Default test(failed)">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.shoppersStack.testscripts.WishlistModule">
-=======
-      <class name="com.shoppersStack.testscripts.MyWalletModule">
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
-=======
-      <class name="com.shoppersStack.testscripts.VocherModule">
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
+      <class name="com.shoppersStack.testscripts.LoginModule">
         <methods>
-<<<<<<< HEAD
-          <include name="removeItemFromWishlist"/>
-=======
-          <include name="myWallet"/>
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
+          <include name="shopperLogin"/>
           <include name="LaunchApplication"/>
-<<<<<<< HEAD
-=======
-          <include name="GenerateVocher"/>
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
+          <include name="adminLogin"/>
         </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.shoppersStack.testscripts.WishlistModule -->
-=======
-      </class> <!-- com.shoppersStack.testscripts.MyWalletModule -->
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
-=======
-      </class> <!-- com.shoppersStack.testscripts.VocherModule -->
->>>>>>> branch 'master' of https://github.com/Rangaiah523/Rangaiah
+      </class> <!-- com.shoppersStack.testscripts.LoginModule -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

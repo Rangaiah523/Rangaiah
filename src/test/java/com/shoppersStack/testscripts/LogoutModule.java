@@ -1,5 +1,7 @@
 package com.shoppersStack.testscripts;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -17,7 +19,7 @@ public class LogoutModule extends BaseClass {
 		wait.until(ExpectedConditions.elementToBeClickable(homePage.logout_Button));
 		Thread.sleep(3000);
 		homePage.logout_Button.click();
-		assertEquals(driver.getCurrentUrl(), "https://www.shoppersstack.com/", "Logout is UnSccessFul");
+		AssertJUnit.assertEquals(driver.getCurrentUrl(), "https://www.shoppersstack.com/", "Logout is UnSccessFul");
 
 	}
 	
@@ -26,7 +28,7 @@ public class LogoutModule extends BaseClass {
 		wait.until(ExpectedConditions.elementToBeClickable(homePage.logout_Button));
 		Thread.sleep(3000);
 		homePage.logout_Button.click();
-		assertEquals(driver.getCurrentUrl(), "https://www.shoppersstack.com/", "Logout is UnSccessFul");
+		AssertJUnit.assertEquals(driver.getCurrentUrl(), "https://www.shoppersstack.com/", "Logout is UnSccessFul");
 
 	}
 

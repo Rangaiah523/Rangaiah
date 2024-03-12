@@ -1,5 +1,7 @@
 package com.shoppersStack.testscripts;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import java.util.Scanner;
@@ -19,7 +21,7 @@ public class MyWalletModule extends BaseClass{
 		homePage.accountSettings_btn.click();
 		homePage.myWallet_button.click();
 		wait.until(ExpectedConditions.titleIs("ShoppersStack | My Wallet"));
-		assertEquals(driver.getTitle(), "ShoppersStack | My Wallet", "Wrong page title");
+		AssertJUnit.assertEquals(driver.getTitle(), "ShoppersStack | My Wallet", "Wrong page title");
 		Thread.sleep(3000);
 		myWallet.CouponCode_TF.sendKeys("V5H7-IJKY-R7PJ");
 		myWallet.Verify_Button.click();

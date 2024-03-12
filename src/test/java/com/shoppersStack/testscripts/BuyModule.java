@@ -1,5 +1,7 @@
 package com.shoppersStack.testscripts;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -17,19 +19,19 @@ public class BuyModule extends BaseClass{
 		homePage.cart_Icon.click();
 		Thread.sleep(3000);
 		wait.until(ExpectedConditions.titleIs("ShoppersStack | Cart"));
-		assertEquals(driver.getTitle(), "ShoppersStack | Cart", "Wrong page title");
+		AssertJUnit.assertEquals(driver.getTitle(), "ShoppersStack | Cart", "Wrong page title");
 		addToCart.buynow_Button.click();
 		wait.until(ExpectedConditions.titleIs("ShoppersStack | Saved Addresses"));
-		assertEquals(driver.getTitle(), "ShoppersStack | Saved Addresses", "Wrong page title");
+		AssertJUnit.assertEquals(driver.getTitle(), "ShoppersStack | Saved Addresses", "Wrong page title");
 		myAddress.AddressRadio_Button.click();
 		myAddress.Proceed_Button.click();
 		Thread.sleep(3000);
 		wait.until(ExpectedConditions.titleIs("ShoppersStack | Payment"));
-		assertEquals(driver.getTitle(), "ShoppersStack | Payment", "Wrong page title");
+		AssertJUnit.assertEquals(driver.getTitle(), "ShoppersStack | Payment", "Wrong page title");
 		paymentpage.COD_Radio_Button.click();
 		paymentpage.Proceed_Button.click();
 		wait.until(ExpectedConditions.titleIs("ShoppersStack | Order Confirmation"));
-		assertEquals(driver.getTitle(), "ShoppersStack | Order Confirmation", "Wrong page title");
+		AssertJUnit.assertEquals(driver.getTitle(), "ShoppersStack | Order Confirmation", "Wrong page title");
 		Thread.sleep(7000);
 		logoutModule.LogoutSg();
 	}
@@ -40,7 +42,7 @@ public class BuyModule extends BaseClass{
 		homePage.accountSettings_btn.click();
 		homePage.myOrders_button.click();
 		wait.until(ExpectedConditions.titleIs("ShoppersStack | My Orders"));
-		assertEquals(driver.getTitle(), "ShoppersStack | My Orders", "Wrong page title");
+		AssertJUnit.assertEquals(driver.getTitle(), "ShoppersStack | My Orders", "Wrong page title");
 		myOrderPage.cancelOrder_Button.click();
 		Thread.sleep(3000);
 		myOrderPage.yes_Button.click();
