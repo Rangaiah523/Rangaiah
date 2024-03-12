@@ -2,6 +2,8 @@ package com.shoppersStack.testscripts;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -22,7 +24,7 @@ public class WishlistModule extends BaseClass {
 		homePage.wishList_button.click();
 		driver.navigate().refresh();
 		wait.until(ExpectedConditions.titleIs("ShoppersStack | Wishlist"));
-		AssertJUnit.assertEquals(driver.getTitle(), "ShoppersStack | Wishlist", "Wrong page title");
+		assertEquals(driver.getTitle(), "ShoppersStack | Wishlist", "Wrong page title");
 		actions.scrollToElement(wishlistPage.wishList_product_txt()).perform();
 		wishlistPage.wishList_product_txt().isDisplayed();
 	}
@@ -34,7 +36,7 @@ public class WishlistModule extends BaseClass {
 		homePage.wishList_button.click();
 		driver.navigate().refresh();
 		wait.until(ExpectedConditions.titleIs("ShoppersStack | Wishlist"));
-		AssertJUnit.assertEquals(driver.getTitle(), "ShoppersStack | Wishlist", "Wrong page title");
+		assertEquals(driver.getTitle(), "ShoppersStack | Wishlist", "Wrong page title");
 		actions.scrollToElement(wishlistPage.wishList_product_txt()).perform();
 		wishlistPage.wishList_product_txt().isDisplayed();
 		wishlistPage.removeFromWishlist_btn().click();

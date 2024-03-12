@@ -36,12 +36,7 @@
 			<version>1.0.2</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/click.webelement/parameterized-findby -->
-		<dependency>
-			<groupId>click.webelement</groupId>
-			<artifactId>parameterized-findby</artifactId>
-			<version>1.0.0</version>
-		</dependency>
+		
 
 	</dependencies>
 </project>

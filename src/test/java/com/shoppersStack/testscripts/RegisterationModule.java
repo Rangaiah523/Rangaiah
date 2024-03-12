@@ -2,6 +2,8 @@ package com.shoppersStack.testscripts;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -17,10 +19,10 @@ public class RegisterationModule extends BaseClass {
 	@Test(priority = 1)
 	public void shopperRegister() throws InterruptedException {
 		welcomePage.Login_btn.click();
-		AssertJUnit.assertEquals(driver.getTitle(), "ShoppersStack | Login", "Wrong page title");
+		assertEquals(driver.getTitle(), "ShoppersStack | Login", "Wrong page title");
 		loginPage.CreateAccount_btn.click();
 		wait.until(ExpectedConditions.titleIs("ShoppersStack | Shopper | Signup"));
-		AssertJUnit.assertEquals(driver.getTitle(), "ShoppersStack | Shopper | Signup", "Wrong page title");
+		assertEquals(driver.getTitle(), "ShoppersStack | Shopper | Signup", "Wrong page title");
 		shopperSignupPage.First_Name_txtfield.sendKeys(faker.name().firstName());
 		shopperSignupPage.Last_Name_txtfield.sendKeys(faker.name().lastName());
 		shopperSignupPage.Gender_Male_radiobtn.click();
@@ -36,11 +38,11 @@ public class RegisterationModule extends BaseClass {
 	@Test(priority = 2)
 	public void adminRegister() throws InterruptedException {
 		welcomePage.Login_btn.click();
-		AssertJUnit.assertEquals(driver.getTitle(), "ShoppersStack | Login", "Wrong page title");
+		assertEquals(driver.getTitle(), "ShoppersStack | Login", "Wrong page title");
 		loginPage.AdminLogin_btn.click();
 		loginPage.CreateAccount_btn.click();
 		wait.until(ExpectedConditions.titleIs("ShoppersStack | Admin | Signup"));
-		AssertJUnit.assertEquals(driver.getTitle(), "ShoppersStack | Admin | Signup", "Wrong page title");
+		assertEquals(driver.getTitle(), "ShoppersStack | Admin | Signup", "Wrong page title");
 		adminSignupPage.First_Name_txtfield.sendKeys(faker.name().firstName());
 		adminSignupPage.Last_Name_txtfield.sendKeys(faker.name().lastName());
 		adminSignupPage.Gender_Male_radiobtn.click();

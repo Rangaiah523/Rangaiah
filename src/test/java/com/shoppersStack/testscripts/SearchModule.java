@@ -2,6 +2,8 @@ package com.shoppersStack.testscripts;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,7 +16,7 @@ public class SearchModule extends BaseClass {
 	@Test()
 	public void SearchProducts() throws Throwable {
 		welcomePage.Login_btn.click();
-		AssertJUnit.assertEquals(driver.getTitle(), "ShoppersStack | Login", "Wrong page title");
+		assertEquals(driver.getTitle(), "ShoppersStack | Login", "Wrong page title");
 		loginPage.Email_txtfield.sendKeys("testing1@gmail.com");
 		loginPage.Password_txtfield.sendKeys("Test@123");
 		loginPage.Login_btn.click();
@@ -25,7 +27,7 @@ public class SearchModule extends BaseClass {
 		homePage.searchTextField.sendKeys("Books");
 		homePage.Search_Icon.click();
 		Thread.sleep(5000);
-		AssertJUnit.assertEquals(driver.getCurrentUrl(), "https://www.shoppersstack.com/search-products/Books/electronics",
+		assertEquals(driver.getCurrentUrl(), "https://www.shoppersstack.com/search-products/Books/electronics",
 				"Page is Wrong");
 	}
 }

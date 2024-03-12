@@ -2,6 +2,8 @@ package com.shoppersStack.testscripts;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import java.io.File;
@@ -22,7 +24,7 @@ public class MyProfileModule extends BaseClass {
 		homePage.accountSettings_btn.click();
 		homePage.myProfile_button.click();
 		wait.until(ExpectedConditions.titleIs("ShoppersStack | Profile"));
-		AssertJUnit.assertEquals(driver.getTitle(), "ShoppersStack | Profile", "Page title is wrong");
+		assertEquals(driver.getTitle(), "ShoppersStack | Profile", "Page title is wrong");
 		myProfilePage.uploadPhoto_btn.click();
 		myProfilePage.addProfilePhoto_txt.isDisplayed();
 		File file = new File("src\\test\\resources\\Profile_Image.jpg");
@@ -39,7 +41,7 @@ public class MyProfileModule extends BaseClass {
 		homePage.accountSettings_btn.click();
 		homePage.myProfile_button.click();
 		wait.until(ExpectedConditions.titleIs("ShoppersStack | Profile"));
-		AssertJUnit.assertEquals(driver.getTitle(), "ShoppersStack | Profile", "Page title is wrong");
+		assertEquals(driver.getTitle(), "ShoppersStack | Profile", "Page title is wrong");
 		myProfilePage.editProfile_btn.click();
 		myProfilePage.editProfile_txt.isDisplayed();
 		myProfilePage.firstName_txtfield.clear();
@@ -51,9 +53,9 @@ public class MyProfileModule extends BaseClass {
 		myProfilePage.submit_btn.click();
 		wait.until(ExpectedConditions.alertIsPresent());
 		String alertMessage = driver.switchTo().alert().getText();
-		AssertJUnit.assertEquals(alertMessage, "Profile updated", "Alert message is wrong");
+		assertEquals(alertMessage, "Profile updated", "Alert message is wrong");
 		driver.switchTo().alert().accept();
 		wait.until(ExpectedConditions.titleIs("ShoppersStack | Profile"));
-		AssertJUnit.assertEquals(driver.getTitle(), "ShoppersStack | Profile", "Page title is wrong");
+		assertEquals(driver.getTitle(), "ShoppersStack | Profile", "Page title is wrong");
 	}
 }

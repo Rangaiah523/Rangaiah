@@ -2,6 +2,8 @@ package com.shoppersStack.testscripts;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import java.sql.Date;
@@ -20,7 +22,7 @@ public class VocherModule extends BaseClass{
 	@Test
 	public void GenerateVocher() throws InterruptedException {
 		welcomePage.Login_btn.click();
-		AssertJUnit.assertEquals(driver.getTitle(), "ShoppersStack | Login", "Wrong page title");
+		assertEquals(driver.getTitle(), "ShoppersStack | Login", "Wrong page title");
 		loginPage.Email_txtfield.sendKeys("testing1@gmail.com");
 		loginPage.Password_txtfield.sendKeys("Test@123");
 		loginPage.Login_btn.click();

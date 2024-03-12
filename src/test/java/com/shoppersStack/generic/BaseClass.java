@@ -74,7 +74,7 @@ public class BaseClass {
 
 	@BeforeMethod
 	public void LaunchApplication() throws IOException, AWTException {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		driver.manage().window().maximize();
 		Properties properties = new Properties();
 		FileInputStream file = new FileInputStream("./src/test/resources/Credentials.json");

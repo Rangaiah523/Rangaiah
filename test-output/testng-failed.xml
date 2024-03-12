@@ -5,7 +5,6 @@
     <classes>
       <class name="com.shoppersStack.testscripts.LoginModule">
         <methods>
-          <include name="shopperLogin"/>
           <include name="LaunchApplication"/>
           <include name="adminLogin"/>
         </methods>
