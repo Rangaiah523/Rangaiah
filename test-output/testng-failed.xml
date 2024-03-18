@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.shoppersStack.testscripts.LoginModule">
+      <class name="com.shoppersStack.testscripts.LogoutModule">
         <methods>
           <include name="LaunchApplication"/>
-          <include name="adminLogin"/>
+          <include name="Logout"/>
         </methods>
-      </class> <!-- com.shoppersStack.testscripts.LoginModule -->
+      </class> <!-- com.shoppersStack.testscripts.LogoutModule -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

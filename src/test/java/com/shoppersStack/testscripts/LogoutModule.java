@@ -1,14 +1,9 @@
 package com.shoppersStack.testscripts;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.annotations.Test;
-
 import com.shoppersStack.generic.BaseClass;
 
 public class LogoutModule extends BaseClass {

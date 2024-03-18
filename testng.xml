@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite thread-count="1" parallel="methods" name="Sanity Suite">
-  <test thread-count="1" parallel="methods" name="Automation Testing">
+<suite thread-count="1" parallel="classes" name="Sanity Suite">
+  <test thread-count="10" parallel="methods" name="Automation Testing">
     <classes>
       <class name="com.shoppersStack.testscripts.BuyModule"/>
       <class name="com.shoppersStack.testscripts.MyProfileModule"/>

@@ -14,8 +14,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 
 import com.github.javafaker.Faker;
 import com.shoppersStack.pom.AccountSettings;
@@ -43,12 +42,13 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseClass {
 	// Driver
 	public static WebDriver driver = WebDriverManager.chromedriver().create();
-	public static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+	public static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 	public static Robot robot;
 	public static JavascriptExecutor js = (JavascriptExecutor) driver;
 	public static Actions actions = new Actions(driver);
 
 	// Faker
+	@SuppressWarnings("deprecation")
 	public static Faker faker = new Faker(new Locale("en-IND"));
 
 	// Page Initialization
@@ -72,24 +72,24 @@ public class BaseClass {
 	public static CouponGeneratorPage couponGeneratorPage = new CouponGeneratorPage(driver);
 	public static MyWallet myWallet = new MyWallet(driver);
 
-	@BeforeMethod
+	@BeforeTest
 	public void LaunchApplication() throws IOException, AWTException {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-		driver.manage().window().maximize();
-		Properties properties = new Properties();
-		FileInputStream file = new FileInputStream("./src/test/resources/Credentials.json");
-		properties.load(file);
-		String url = properties.getProperty("URL");
-		String expectedTitle = properties.getProperty("WelcomePageTitle");
-		driver.get(url);
-		assertEquals(driver.getTitle(), expectedTitle, "Title is Wrong");
-		robot = new Robot();
+		if (driver != null) {
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+			driver.manage().window().maximize();
+			Properties properties = new Properties();
+			FileInputStream file = new FileInputStream("./src/test/resources/Credentials.json");
+			properties.load(file);
+			String url = properties.getProperty("URL");
+			String expectedTitle = properties.getProperty("WelcomePageTitle");
+			driver.get(url);
+			assertEquals(driver.getTitle(), expectedTitle, "Title is Wrong");
+			robot = new Robot();
+			if(driver!=null) {
+				driver.close();
+			}
+		} else {
+			driver = WebDriverManager.chromedriver().create();
+		}
 	}
-
-//	@AfterMethod
-//	public void tearDown() {
-//		if(driver!=null) {
-//			driver.quit();
-//		}
-//	}
 }

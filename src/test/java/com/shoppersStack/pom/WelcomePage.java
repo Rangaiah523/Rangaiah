@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class WelcomePage {
-	
 
 	@FindBy(xpath ="//button[@id=\"loginBtn\"]")
 	public WebElement Login_btn;
