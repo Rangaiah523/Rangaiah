@@ -85,7 +85,7 @@ public class BaseClass {
 			driver.get(url);
 			assertEquals(driver.getTitle(), expectedTitle, "Title is Wrong");
 			robot = new Robot();
-			if(driver!=null) {
+			if (driver != null) {
 				driver.close();
 			}
 		} else {
