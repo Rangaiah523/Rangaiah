@@ -1,16 +1,11 @@
 package com.shoppersStack.testscripts;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
-
 import com.shoppersStack.generic.BaseClass;
 
 @Listeners(com.shoppersStack.generic.ListenerImplementation.class)
@@ -33,6 +28,7 @@ public class RegisterationModule extends BaseClass {
 		shopperSignupPage.Terms_Conditions_chkbox.click();
 		shopperSignupPage.Register_btn.click();
 		homePage.SuccessfullyRegistered_txt.isDisplayed();
+		driver=null;
 	}
 
 	@Test(priority = 2)
@@ -58,5 +54,6 @@ public class RegisterationModule extends BaseClass {
 		cityDropdown.selectByValue("Bengaluru");
 		adminSignupPage.Register_btn.click();
 		homePage.Profile_Created_Successfully_txt.isDisplayed();
+		driver=null;
 	}
 }

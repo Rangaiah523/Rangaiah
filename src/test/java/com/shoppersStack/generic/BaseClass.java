@@ -14,6 +14,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import com.github.javafaker.Faker;
@@ -74,7 +75,7 @@ public class BaseClass {
 
 	@BeforeTest
 	public void LaunchApplication() throws IOException, AWTException {
-		if (driver != null) {
+		while (driver != null) {
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 			driver.manage().window().maximize();
 			Properties properties = new Properties();
@@ -85,11 +86,14 @@ public class BaseClass {
 			driver.get(url);
 			assertEquals(driver.getTitle(), expectedTitle, "Title is Wrong");
 			robot = new Robot();
-			if (driver != null) {
-				driver.close();
-			}
-		} else {
-			driver = WebDriverManager.chromedriver().create();
+			break;
 		}
 	}
+//	@AfterTest
+//	public void Relaunch() throws IOException, AWTException {
+//		if(driver==null) {
+//			driver = WebDriverManager.chromedriver().create();
+//			LaunchApplication();
+//		}
+//	}
 }

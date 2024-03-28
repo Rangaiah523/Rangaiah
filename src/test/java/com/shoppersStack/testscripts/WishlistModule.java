@@ -3,6 +3,9 @@ package com.shoppersStack.testscripts;
 import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Listeners;
 import com.shoppersStack.generic.BaseClass;
@@ -11,7 +14,7 @@ import com.shoppersStack.generic.BaseClass;
 public class WishlistModule extends BaseClass {
 
 	@Test(priority = 1)
-	public void addItemToWishlist() throws InterruptedException {
+	public void addItemToWishlist() throws InterruptedException, EncryptedDocumentException, IOException {
 		loginModule.shopperLogin();
 		actions.scrollToElement(wishlistPage.wishList_btn()).perform();
 		wishlistPage.wishList_btn().click();
@@ -22,10 +25,11 @@ public class WishlistModule extends BaseClass {
 		assertEquals(driver.getTitle(), "ShoppersStack | Wishlist", "Wrong page title");
 		actions.scrollToElement(wishlistPage.wishList_product_txt()).perform();
 		wishlistPage.wishList_product_txt().isDisplayed();
+		driver=null;
 	}
 	
 	@Test(priority = 2)
-	public void removeItemFromWishlist() throws InterruptedException {
+	public void removeItemFromWishlist() throws InterruptedException, EncryptedDocumentException, IOException {
 		loginModule.shopperLogin();
 		homePage.accountSettings_btn.click();
 		homePage.wishList_button.click();
@@ -38,6 +42,7 @@ public class WishlistModule extends BaseClass {
 		wait.until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
 		driver.navigate().refresh();
-		wishlistPage.wishlistIsEmpty_txt.isDisplayed();		
+		wishlistPage.wishlistIsEmpty_txt.isDisplayed();
+		driver=null;
 	}
 }

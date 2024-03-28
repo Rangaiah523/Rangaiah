@@ -1,25 +1,22 @@
 package com.shoppersStack.testscripts;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import java.io.File;
+import java.io.IOException;
 
+import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
-
 import com.shoppersStack.generic.BaseClass;
 
 @Listeners(com.shoppersStack.generic.ListenerImplementation.class)
 public class MyProfileModule extends BaseClass {
 
 	@Test(priority = 1)
-	public void uploadProfileImage() {
+	public void uploadProfileImage() throws EncryptedDocumentException, IOException{
 		new LoginModule().shopperLogin();
 		homePage.accountSettings_btn.click();
 		homePage.myProfile_button.click();
@@ -36,7 +33,7 @@ public class MyProfileModule extends BaseClass {
 	}
 
 	@Test(priority = 2)
-	public void editprofile() {
+	public void editprofile() throws EncryptedDocumentException, IOException, InterruptedException {
 		new LoginModule().shopperLogin();
 		homePage.accountSettings_btn.click();
 		homePage.myProfile_button.click();

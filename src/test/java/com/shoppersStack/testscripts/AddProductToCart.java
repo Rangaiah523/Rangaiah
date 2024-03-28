@@ -3,11 +3,15 @@ package com.shoppersStack.testscripts;
 import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
+
 import com.shoppersStack.generic.BaseClass;
 
 public class AddProductToCart extends BaseClass{
 	@Test(priority = 1)
-	public void addProductToCart() throws InterruptedException {
+	public void addProductToCart() throws InterruptedException, EncryptedDocumentException, IOException {
 		loginModule.shopperLogin();
 		actions.scrollToElement(homePage.addToCart_Button).perform();
 		homePage.addToCart_Button.click();
@@ -18,7 +22,7 @@ public class AddProductToCart extends BaseClass{
 	}
 	
 	@Test(priority = 2)
-	public void editProductInCart() throws InterruptedException {
+	public void editProductInCart() throws InterruptedException, EncryptedDocumentException, IOException {
 		loginModule.shopperLogin();
 		homePage.cart_Icon.click();
 		Thread.sleep(3000);
@@ -29,7 +33,7 @@ public class AddProductToCart extends BaseClass{
 	}
 	
 	@Test(priority = 3)
-	public void deleteProductFromCart() throws InterruptedException {
+	public void deleteProductFromCart() throws InterruptedException, EncryptedDocumentException, IOException {
 		loginModule.shopperLogin();
 		homePage.cart_Icon.click();
 		Thread.sleep(3000);

@@ -6,8 +6,10 @@ import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
+import java.io.IOException;
 import java.util.Scanner;
 
+import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
@@ -18,7 +20,7 @@ public class MyWalletModule extends BaseClass{
 	public static String CouponCode;
 	
 	@Test
-	public void myWallet() throws InterruptedException {
+	public void myWallet() throws InterruptedException, EncryptedDocumentException, IOException {
 		loginModule.shopperLogin();
 		homePage.accountSettings_btn.click();
 		homePage.myWallet_button.click();

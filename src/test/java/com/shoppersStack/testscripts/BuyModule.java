@@ -6,6 +6,9 @@ import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
@@ -14,7 +17,7 @@ import com.shoppersStack.generic.BaseClass;
 public class BuyModule extends BaseClass{
 	
 	@Test
-	public void orderProduct() throws InterruptedException{
+	public void orderProduct() throws InterruptedException, EncryptedDocumentException, IOException{
 		loginModule.shopperLogin();
 		actions.scrollToElement(homePage.addToCart_Button).perform();
 		homePage.addToCart_Button.click();
@@ -39,7 +42,7 @@ public class BuyModule extends BaseClass{
 	}
 	
 	@Test
-	public void cancelOrder() throws InterruptedException{
+	public void cancelOrder() throws InterruptedException, EncryptedDocumentException, IOException{
 		loginModule.shopperLogin();
 		homePage.accountSettings_btn.click();
 		homePage.myOrders_button.click();
