@@ -19,11 +19,13 @@ public class LoginModule extends BaseClass {
 	public void shopperLogin() throws EncryptedDocumentException, IOException {
 		welcomePage.Login_btn.click();
 		assertEquals(driver.getTitle(), "ShoppersStack | Login", "Wrong page title");
+		//Data Providers
 		FileInputStream fis=new FileInputStream("C:/Users/User/git/Rangaiah/src/test/resources/Testing Datas/Test Data.xlsx");
 		String email=WorkbookFactory.create(fis).getSheet("Sheet1").getRow(1).getCell(0).getStringCellValue();
 		loginPage.Email_txtfield.sendKeys(email);
 		String pass=WorkbookFactory.create(fis).getSheet("Sheet1").getRow(1).getCell(1).getStringCellValue();
 		loginPage.Password_txtfield.sendKeys(pass);
+		
 		loginPage.Login_btn.click();
 		wait.until(ExpectedConditions.titleIs("ShoppersStack | Home"));
 		assertEquals(driver.getTitle(), "ShoppersStack | Home", "Wrong page title");

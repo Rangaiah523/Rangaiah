@@ -89,6 +89,8 @@ public class BaseClass {
 			break;
 		}
 	}
+	
+	
 //	@AfterTest
 //	public void Relaunch() throws IOException, AWTException {
 //		if(driver==null) {

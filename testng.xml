@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite thread-count="1" parallel="classes" name="Sanity Suite">
-  <test thread-count="10" parallel="methods" name="Automation Testing">
+<suite thread-count="2" parallel="classes" name="Trial">
+  <test thread-count="2" parallel="classes" name="Test">
+  <parameter name="browser" value="Chrome"></parameter>
     <classes>
-      <class name="com.shoppersStack.testscripts.BuyModule"/>
-      <class name="com.shoppersStack.testscripts.MyProfileModule"/>
-      <class name="com.shoppersStack.testscripts.MyWalletModule"/>
-      <class name="com.shoppersStack.testscripts.MyAddressModule"/>
-      <class name="com.shoppersStack.testscripts.AddProductToCart"/>
-      <class name="com.shoppersStack.testscripts.LoginModule"/>
-      <class name="com.shoppersStack.testscripts.WishlistModule"/>
-      <class name="com.shoppersStack.testscripts.VocherModule"/>
-      <class name="com.shoppersStack.testscripts.LogoutModule"/>
-      <class name="com.shoppersStack.testscripts.RegisterationModule"/>
-      <class name="com.shoppersStack.testscripts.SearchModule"/>
+      <class name="testing.DataProvider"/>
     </classes>
-  </test> <!-- Automation Testing -->
-</suite> <!-- Sanity Suite -->
+  </test> <!-- Test -->
+  <test thread-count="2" parallel="classes" name="Test2">
+  <parameter name="browser" value="Edge"></parameter>
+    <classes>
+      <class name="testing.DataProvider"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Trial -->
