@@ -1,6 +1,5 @@
 package testing;
 
-import java.sql.DriverManager;
 import java.time.Duration;
 import java.util.TreeMap;
 
@@ -10,11 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
-import com.beust.jcommander.Parameter;
 
 public class DataProvider {
 	
@@ -23,11 +19,13 @@ public class DataProvider {
 	@org.testng.annotations.DataProvider(name="balaji")
 	public Object[][] getData() {
 		Object[][] data = {{"user1@gmail.com","Password@123"},{"user2@gmail.com","Password@234"},{"user3@gmail.com","Password@345"}};
-//		TreeMap map = new TreeMap();
-//		map.put("user1@gmail.com", "Password@123");
-//		map.put("user2@gmail.com", "Password@234");
-//		map.put("user3@gmail.com", "Password@345");
-//		map.put("user4@gmail.com", "Password@456");
+		TreeMap map = new TreeMap();
+		map.put("user1@gmail.com", "Password@123");
+		map.put("user2@gmail.com", "Password@234");
+		map.put("user3@gmail.com", "Password@345");
+		map.put("user4@gmail.com", "Password@456");
+		TreeMap map2=new TreeMap();
+		map2.putAll(map);
 		return data;
 	}
 	
